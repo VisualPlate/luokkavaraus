@@ -1,0 +1,8 @@
+:root {
+    /* ============== */
+    /* = containers = */
+    /* ============== */
+    
+    /* container default padding */
+    --container-padding:5px;
+}
