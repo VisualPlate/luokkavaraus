@@ -1,0 +1,50 @@
+/*to use, link also general and theme css files on /config*/
+*  {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background-color: var(--bg-body);
+    color: var(--text-secondary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
+
+/*default fonts*/
+.text-primary {color: var(--text-primary);}
+.text-secondary {color: var(--text-secondary);}
+
+/*flex colums and rows*/
+.col,.row {display: flex;}
+.col {flex-direction: column;}
+.row {flex-direction: row;}
+
+/*default full size container*/
+.container {
+    width: 100%;
+    background-color: var(--bg-container);
+    padding: var(--container-padding);
+}
+/*grids*/
+.grid-rows-1,
+.grid-rows-2,
+.grid-rows-3,
+.grid-rows-4,
+.grid-rows-5,
+.grid-rows-6,
+.grid-rows-auto-2 {
+    display: grid;
+}
+.grid-rows-1 {grid-template-columns: repeat(1, 2fr);}
+.grid-rows-2 {grid-template-columns: repeat(2, 2fr);}
+.grid-rows-3 {grid-template-columns: repeat(3, 2fr);}
+.grid-rows-4 {grid-template-columns: repeat(4, 2fr);}
+.grid-rows-5 {grid-template-columns: repeat(5, 2fr);}
+.grid-rows-6 {grid-template-columns: repeat(6, 2fr);}
+/*auto scale grid*/
+.grid-rows-auto-2 {grid-template-columns: repeat(2,2fr);}
+
+@media (max-width:600px) {
+    .grid-rows-auto-2 {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

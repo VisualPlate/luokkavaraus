@@ -1,0 +1,28 @@
+:root {
+    /* ==============*/
+    /* = Background =*/
+    /* ==============*/
+
+    /*only the body color*/
+    --bg-body:#EEEEEE;
+    /*mostly for the containers*/
+    --bg-container:#FAFAFA;
+    /*for nav, or secondary containers*/
+    --bg-nav:#fafafa;
+
+    /* ===============*/
+    /* ==== TEXTS ====*/
+    /* ===============*/
+
+    /*Primary texts, like headers*/
+    --text-primary:#4C4C4C;
+    /*secondary text, like headers or links*/
+    --text-secondary:#3C3C3C;
+
+    /* ==============*/
+    /* ==== MISC ====*/
+    /* ==============*/
+
+    /*Shadow color*/
+    --shadow-gray:#4c4c4c20;
+}
