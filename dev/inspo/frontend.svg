@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="frontend.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.38203408"
+     inkscape:cx="1001.2196"
+     inkscape:cy="978.97025"
+     inkscape:window-width="1398"
+     inkscape:window-height="1360"
+     inkscape:window-x="1153"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1">
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="261.15501"
+       height="120.13134"
+       id="rect32" />
+    <rect
+       x="770.21924"
+       y="1285.2257"
+       width="79.181417"
+       height="85.725336"
+       id="rect30" />
+    <rect
+       x="591.57026"
+       y="1827.0621"
+       width="311.49053"
+       height="69.365541"
+       id="rect29" />
+    <linearGradient
+       id="linearGradient15"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#7b7b7b;stop-opacity:1;"
+         offset="0"
+         id="stop15" />
+      <stop
+         style="stop-color:#9c9c9c;stop-opacity:1;"
+         offset="1"
+         id="stop16" />
+    </linearGradient>
+    <rect
+       x="1316.6365"
+       y="858.56215"
+       width="387.4"
+       height="34.028377"
+       id="rect15" />
+    <rect
+       x="1421.491"
+       y="729.2545"
+       width="481.23393"
+       height="103.65039"
+       id="rect13" />
+    <rect
+       x="1225.2956"
+       y="688.5347"
+       width="425.70694"
+       height="144.37018"
+       id="rect12" />
+    <rect
+       x="238.19864"
+       y="680.56755"
+       width="975.07855"
+       height="246.68648"
+       id="rect11" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect5" />
+    <rect
+       x="349.44526"
+       y="64.130404"
+       width="256.52162"
+       height="56.277702"
+       id="rect4" />
+    <rect
+       x="361.8509"
+       y="57.377892"
+       width="254.49871"
+       height="47.197943"
+       id="rect3" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect8" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect9" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect10" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient16"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288"
+       gradientUnits="userSpaceOnUse" />
+    <rect
+       x="238.19864"
+       y="680.56755"
+       width="975.07855"
+       height="246.68648"
+       id="rect21" />
+    <rect
+       x="1421.491"
+       y="729.2545"
+       width="481.23393"
+       height="103.65039"
+       id="rect22" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect23" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect24" />
+    <rect
+       x="1316.6365"
+       y="858.56215"
+       width="387.4"
+       height="34.028377"
+       id="rect25" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient25"
+       gradientUnits="userSpaceOnUse"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288"
+       gradientTransform="matrix(0.19313976,0,0,0.56078724,684.64676,1258.4438)" />
+    <rect
+       x="770.21924"
+       y="1285.2257"
+       width="79.181417"
+       height="85.725336"
+       id="rect31" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="258.20052"
+       height="37.480719"
+       id="rect33" />
+    <rect
+       x="591.57026"
+       y="1827.0621"
+       width="311.49053"
+       height="69.365541"
+       id="rect36" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="261.15501"
+       height="120.13134"
+       id="rect37" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="258.20052"
+       height="37.480719"
+       id="rect38" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient38"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.19313976,0,0,0.56078724,1064.6468,1258.4438)"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288" />
+    <rect
+       x="591.57026"
+       y="1827.0621"
+       width="311.49053"
+       height="69.365541"
+       id="rect41" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="261.15501"
+       height="120.13134"
+       id="rect42" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="258.20052"
+       height="37.480719"
+       id="rect43" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient43"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.19313976,0,0,0.56078724,1444.6468,1258.4438)"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288" />
+    <rect
+       x="591.57026"
+       y="1827.0621"
+       width="311.49053"
+       height="69.365541"
+       id="rect52" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="261.15501"
+       height="120.13134"
+       id="rect53" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="258.20052"
+       height="37.480719"
+       id="rect54" />
+    <rect
+       x="591.57026"
+       y="1827.0621"
+       width="311.49053"
+       height="69.365541"
+       id="rect55" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="261.15501"
+       height="120.13134"
+       id="rect56" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="258.20052"
+       height="37.480719"
+       id="rect57" />
+    <rect
+       x="591.57026"
+       y="1827.0621"
+       width="311.49053"
+       height="69.365541"
+       id="rect58" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="261.15501"
+       height="120.13134"
+       id="rect59" />
+    <rect
+       x="595.98972"
+       y="1804.6272"
+       width="258.20052"
+       height="37.480719"
+       id="rect60" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient60"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.19313976,0,0,0.56078724,1444.6468,1818.4438)"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient61"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.19313976,0,0,0.56078724,1064.6468,1818.4438)"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15"
+       id="linearGradient62"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.19313976,0,0,0.56078724,684.64676,1818.4438)"
+       x1="-25.912596"
+       y1="-196.19537"
+       x2="2483.9075"
+       y2="1499.2288" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect63" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect65" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect67" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect68" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect69" />
+    <rect
+       x="680.56755"
+       y="37.954729"
+       width="422.73715"
+       height="132.18716"
+       id="rect73" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="bg"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:3.89018;paint-order:fill markers stroke"
+       id="rect6"
+       width="1920"
+       height="1080"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:3.89018;paint-order:fill markers stroke"
+       id="rect16"
+       width="1920"
+       height="1080"
+       x="0"
+       y="1120" />
+  </g>
+  <g
+     inkscape:label="hero"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient16);fill-opacity:1;stroke-width:1.1414;paint-order:fill markers stroke"
+       id="rect2"
+       width="1792"
+       height="952"
+       x="64"
+       y="64"
+       ry="65.861633" />
+    <text
+       xml:space="preserve"
+       id="text10"
+       style="font-size:64px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect11);display:inline;fill:#000000;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(-34.395887,59.94859)"><tspan
+         x="238.19922"
+         y="738.9575"
+         id="tspan2"><tspan
+           style="fill:#ffffff"
+           id="tspan1">Paikallinen </tspan></tspan><tspan
+         x="238.19922"
+         y="818.9575"
+         id="tspan4"><tspan
+           style="fill:#ffffff"
+           id="tspan3">luokkavarausjärjestelmä</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text12"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(-162.75893,79.39051)"><tspan
+         x="1421.4902"
+         y="756.01556"
+         id="tspan5">Varaa nyt ilmaiseksi</tspan></text>
+    <rect
+       style="fill:url(#linearGradient25);fill-opacity:1;stroke-width:0.37564;paint-order:fill markers stroke"
+       id="rect17"
+       width="346.10645"
+       height="533.86945"
+       x="697.00769"
+       y="1294.3342"
+       ry="36.934364" />
+    <text
+       xml:space="preserve"
+       id="text29"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect29);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(142.86689,-211.10777)"><tspan
+         x="591.57031"
+         y="1861.1228"
+         id="tspan7"><tspan
+           style="fill:#f2f2f2"
+           id="tspan6">Luokka 1</tspan></tspan></text>
+    <path
+       id="path29"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1011.3262,1304.3574 a 22.675175,22.675175 0 0 0 -22.67581,22.6758 22.675175,22.675175 0 0 0 22.67581,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6758 z m -0.3809,9.6153 c 2.3516,0 4.2043,0.5741 5.5606,1.7226 1.3672,1.1375 2.0507,2.6414 2.0507,4.5117 0,1.0719 -0.1914,2.0309 -0.5742,2.8731 -0.3828,0.8312 -0.8863,1.5695 -1.5097,2.2148 -0.6126,0.6235 -1.3168,1.207 -2.1153,1.7539 -0.7984,0.5469 -1.646,1.0778 -2.5429,1.5918 v 3.6914 h -2.9375 v -5.0039 c 0.7109,-0.4047 1.4765,-0.8468 2.2968,-1.3281 0.8313,-0.4813 1.5102,-0.9687 2.0352,-1.4609 0.6344,-0.5688 1.1265,-1.1543 1.4766,-1.7559 0.35,-0.6125 0.5253,-1.3894 0.5253,-2.3301 0,-1.2359 -0.4214,-2.1543 -1.2636,-2.7558 -0.8313,-0.6125 -1.909,-0.918 -3.2325,-0.918 -1.1812,0 -2.3023,0.1848 -3.3632,0.5566 -1.0501,0.3719 -1.8817,0.75 -2.4942,1.1329 h -0.164 v -3.3477 c 0.7656,-0.2953 1.7339,-0.5574 2.9043,-0.7871 1.1812,-0.2406 2.2976,-0.3613 3.3476,-0.3613 z m -2.2148,21.4609 h 3.3457 v 3.4609 h -3.3457 z" />
+    <path
+       id="circle30"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1011.3262,1353.1758 a 22.675175,22.675175 0 0 0 -22.67581,22.6738 22.675175,22.675175 0 0 0 22.67581,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6738 z m -9.1641,17.4453 h 19.457 v 2.625 h -19.457 z m 0,6.8906 h 19.457 v 2.625 h -19.457 z" />
+    <text
+       xml:space="preserve"
+       id="text31"
+       style="font-size:19.5851px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect32);display:inline;fill:#e6e6e6;fill-opacity:1;paint-order:fill markers stroke"
+       transform="matrix(1.229319,0,0,1.2215405,-1.22407,-544.62614)"><tspan
+         x="595.99023"
+         y="1822.495"
+         id="tspan9"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan8">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1847.2032"
+         id="tspan11"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan10">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1871.9113"
+         id="tspan13"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan12">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1896.6194"
+         id="tspan16"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan14">Lorem ipsum Lorem ipsum </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text33"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect33);display:inline;fill:#f9f9f9;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(172,-20)"><tspan
+         x="595.99023"
+         y="1831.3886"
+         id="tspan18"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan17">LH1 - katu 123</tspan></tspan></text>
+    <rect
+       style="fill:url(#linearGradient38);fill-opacity:1;stroke-width:0.37564;paint-order:fill markers stroke"
+       id="rect34"
+       width="346.10645"
+       height="533.86945"
+       x="1077.0077"
+       y="1294.3342"
+       ry="36.934364" />
+    <text
+       xml:space="preserve"
+       id="text34"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect36);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(522.86689,-211.10777)"><tspan
+         x="591.57031"
+         y="1861.1228"
+         id="tspan20"><tspan
+           style="fill:#f2f2f2"
+           id="tspan19">Luokka 2
+</tspan></tspan></text>
+    <path
+       id="path34"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1391.3262,1304.3574 a 22.675175,22.675175 0 0 0 -22.6758,22.6758 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6758 z m -0.3809,9.6153 c 2.3516,0 4.2043,0.5741 5.5606,1.7226 1.3672,1.1375 2.0507,2.6414 2.0507,4.5117 0,1.0719 -0.1914,2.0309 -0.5742,2.8731 -0.3828,0.8312 -0.8863,1.5695 -1.5097,2.2148 -0.6126,0.6235 -1.3168,1.207 -2.1153,1.7539 -0.7984,0.5469 -1.646,1.0778 -2.5429,1.5918 v 3.6914 h -2.9375 v -5.0039 c 0.7109,-0.4047 1.4765,-0.8468 2.2968,-1.3281 0.8313,-0.4813 1.5102,-0.9687 2.0352,-1.4609 0.6344,-0.5688 1.1265,-1.1543 1.4766,-1.7559 0.35,-0.6125 0.5253,-1.3894 0.5253,-2.3301 0,-1.2359 -0.4214,-2.1543 -1.2636,-2.7558 -0.8313,-0.6125 -1.909,-0.918 -3.2325,-0.918 -1.1812,0 -2.3023,0.1848 -3.3632,0.5566 -1.0501,0.3719 -1.8817,0.75 -2.4942,1.1329 h -0.164 v -3.3477 c 0.7656,-0.2953 1.7339,-0.5574 2.9043,-0.7871 1.1812,-0.2406 2.2976,-0.3613 3.3476,-0.3613 z m -2.2148,21.4609 h 3.3457 v 3.4609 h -3.3457 z" />
+    <path
+       id="path35"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1391.3262,1353.1758 a 22.675175,22.675175 0 0 0 -22.6758,22.6738 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6738 z m -9.1641,17.4453 h 19.457 v 2.625 h -19.457 z m 0,6.8906 h 19.457 v 2.625 h -19.457 z" />
+    <text
+       xml:space="preserve"
+       id="text35"
+       style="font-size:19.5851px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect37);display:inline;fill:#e6e6e6;fill-opacity:1;paint-order:fill markers stroke"
+       transform="matrix(1.229319,0,0,1.2215405,378.77593,-544.62614)"><tspan
+         x="595.99023"
+         y="1822.495"
+         id="tspan22"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan21">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1847.2032"
+         id="tspan24"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan23">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1871.9113"
+         id="tspan26"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan25">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1896.6194"
+         id="tspan28"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan27">Lorem ipsum Lorem ipsum </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text36"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect38);display:inline;fill:#f9f9f9;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(552,-20)"><tspan
+         x="595.99023"
+         y="1831.3886"
+         id="tspan30"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan29">LH1 - katu 123</tspan></tspan></text>
+    <rect
+       style="fill:url(#linearGradient43);fill-opacity:1;stroke-width:0.37564;paint-order:fill markers stroke"
+       id="rect39"
+       width="346.10645"
+       height="533.86945"
+       x="1457.0077"
+       y="1294.3342"
+       ry="36.934364" />
+    <text
+       xml:space="preserve"
+       id="text39"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect41);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(902.86689,-211.10777)"><tspan
+         x="591.57031"
+         y="1861.1228"
+         id="tspan32"><tspan
+           style="fill:#f2f2f2"
+           id="tspan31">Luokka 3
+</tspan></tspan></text>
+    <path
+       id="path39"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1771.3262,1304.3574 a 22.675175,22.675175 0 0 0 -22.6758,22.6758 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6758 z m -0.3809,9.6153 c 2.3516,0 4.2043,0.5741 5.5606,1.7226 1.3672,1.1375 2.0507,2.6414 2.0507,4.5117 0,1.0719 -0.1914,2.0309 -0.5742,2.8731 -0.3828,0.8312 -0.8863,1.5695 -1.5097,2.2148 -0.6126,0.6235 -1.3168,1.207 -2.1153,1.7539 -0.7984,0.5469 -1.646,1.0778 -2.5429,1.5918 v 3.6914 h -2.9375 v -5.0039 c 0.7109,-0.4047 1.4765,-0.8468 2.2968,-1.3281 0.8313,-0.4813 1.5102,-0.9687 2.0352,-1.4609 0.6344,-0.5688 1.1265,-1.1543 1.4766,-1.7559 0.35,-0.6125 0.5253,-1.3894 0.5253,-2.3301 0,-1.2359 -0.4214,-2.1543 -1.2636,-2.7558 -0.8313,-0.6125 -1.909,-0.918 -3.2325,-0.918 -1.1812,0 -2.3023,0.1848 -3.3632,0.5566 -1.0501,0.3719 -1.8817,0.75 -2.4942,1.1329 h -0.164 v -3.3477 c 0.7656,-0.2953 1.7339,-0.5574 2.9043,-0.7871 1.1812,-0.2406 2.2976,-0.3613 3.3476,-0.3613 z m -2.2148,21.4609 h 3.3457 v 3.4609 h -3.3457 z" />
+    <path
+       id="path40"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1771.3262,1353.1758 a 22.675175,22.675175 0 0 0 -22.6758,22.6738 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6738 z m -9.1641,17.4453 h 19.457 v 2.625 h -19.457 z m 0,6.8906 h 19.457 v 2.625 h -19.457 z" />
+    <text
+       xml:space="preserve"
+       id="text40"
+       style="font-size:19.5851px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect42);display:inline;fill:#e6e6e6;fill-opacity:1;paint-order:fill markers stroke"
+       transform="matrix(1.229319,0,0,1.2215405,758.77593,-544.62614)"><tspan
+         x="595.99023"
+         y="1822.495"
+         id="tspan34"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan33">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1847.2032"
+         id="tspan36"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan35">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1871.9113"
+         id="tspan38"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan37">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1896.6194"
+         id="tspan42"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan39">Lorem ipsum Lorem ipsum </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text41"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect43);display:inline;fill:#f9f9f9;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(932,-20)"><tspan
+         x="595.99023"
+         y="1831.3886"
+         id="tspan53"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan43">LH1 - katu 123</tspan></tspan></text>
+    <rect
+       style="fill:url(#linearGradient62);fill-opacity:1;stroke-width:0.37564;paint-order:fill markers stroke"
+       id="rect44"
+       width="346.10645"
+       height="533.86945"
+       x="697.00769"
+       y="1854.3342"
+       ry="36.934364" />
+    <text
+       xml:space="preserve"
+       id="text44"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect52);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(142.86689,348.89223)"><tspan
+         x="591.57031"
+         y="1861.1228"
+         id="tspan55"><tspan
+           style="fill:#f2f2f2"
+           id="tspan54">Luokka 4
+</tspan></tspan></text>
+    <path
+       id="path44"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1011.3262,1864.3574 a 22.675175,22.675175 0 0 0 -22.67581,22.6758 22.675175,22.675175 0 0 0 22.67581,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6758 z m -0.3809,9.6153 c 2.3516,0 4.2043,0.5741 5.5606,1.7226 1.3672,1.1375 2.0507,2.6414 2.0507,4.5117 0,1.0719 -0.1914,2.0309 -0.5742,2.8731 -0.3828,0.8312 -0.8863,1.5695 -1.5097,2.2148 -0.6126,0.6235 -1.3168,1.207 -2.1153,1.7539 -0.7984,0.5469 -1.646,1.0778 -2.5429,1.5918 v 3.6914 h -2.9375 v -5.0039 c 0.7109,-0.4047 1.4765,-0.8468 2.2968,-1.3281 0.8313,-0.4813 1.5102,-0.9687 2.0352,-1.4609 0.6344,-0.5688 1.1265,-1.1543 1.4766,-1.7559 0.35,-0.6125 0.5253,-1.3894 0.5253,-2.3301 0,-1.2359 -0.4214,-2.1543 -1.2636,-2.7558 -0.8313,-0.6125 -1.909,-0.918 -3.2325,-0.918 -1.1812,0 -2.3023,0.1848 -3.3632,0.5566 -1.0501,0.3719 -1.8817,0.75 -2.4942,1.1329 h -0.164 v -3.3477 c 0.7656,-0.2953 1.7339,-0.5574 2.9043,-0.7871 1.1812,-0.2406 2.2976,-0.3613 3.3476,-0.3613 z m -2.2148,21.4609 h 3.3457 v 3.4609 h -3.3457 z" />
+    <path
+       id="path45"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1011.3262,1913.1758 a 22.675175,22.675175 0 0 0 -22.67581,22.6738 22.675175,22.675175 0 0 0 22.67581,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6738 z m -9.1641,17.4453 h 19.457 v 2.625 h -19.457 z m 0,6.8906 h 19.457 v 2.625 h -19.457 z" />
+    <text
+       xml:space="preserve"
+       id="text45"
+       style="font-size:19.5851px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect53);display:inline;fill:#e6e6e6;fill-opacity:1;paint-order:fill markers stroke"
+       transform="matrix(1.229319,0,0,1.2215405,-1.22407,15.37386)"><tspan
+         x="595.99023"
+         y="1822.495"
+         id="tspan57"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan56">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1847.2032"
+         id="tspan59"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan58">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1871.9113"
+         id="tspan61"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan60">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1896.6194"
+         id="tspan63"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan62">Lorem ipsum Lorem ipsum </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text46"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect54);display:inline;fill:#f9f9f9;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(172,540)"><tspan
+         x="595.99023"
+         y="1831.3886"
+         id="tspan65"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan64">LH1 - katu 123</tspan></tspan></text>
+    <rect
+       style="fill:url(#linearGradient61);fill-opacity:1;stroke-width:0.37564;paint-order:fill markers stroke"
+       id="rect46"
+       width="346.10645"
+       height="533.86945"
+       x="1077.0077"
+       y="1854.3342"
+       ry="36.934364" />
+    <text
+       xml:space="preserve"
+       id="text47"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect55);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(522.86689,348.89223)"><tspan
+         x="591.57031"
+         y="1861.1228"
+         id="tspan67"><tspan
+           style="fill:#f2f2f2"
+           id="tspan66">Luokka 5
+</tspan></tspan></text>
+    <path
+       id="path47"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1391.3262,1864.3574 a 22.675175,22.675175 0 0 0 -22.6758,22.6758 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6758 z m -0.3809,9.6153 c 2.3516,0 4.2043,0.5741 5.5606,1.7226 1.3672,1.1375 2.0507,2.6414 2.0507,4.5117 0,1.0719 -0.1914,2.0309 -0.5742,2.8731 -0.3828,0.8312 -0.8863,1.5695 -1.5097,2.2148 -0.6126,0.6235 -1.3168,1.207 -2.1153,1.7539 -0.7984,0.5469 -1.646,1.0778 -2.5429,1.5918 v 3.6914 h -2.9375 v -5.0039 c 0.7109,-0.4047 1.4765,-0.8468 2.2968,-1.3281 0.8313,-0.4813 1.5102,-0.9687 2.0352,-1.4609 0.6344,-0.5688 1.1265,-1.1543 1.4766,-1.7559 0.35,-0.6125 0.5253,-1.3894 0.5253,-2.3301 0,-1.2359 -0.4214,-2.1543 -1.2636,-2.7558 -0.8313,-0.6125 -1.909,-0.918 -3.2325,-0.918 -1.1812,0 -2.3023,0.1848 -3.3632,0.5566 -1.0501,0.3719 -1.8817,0.75 -2.4942,1.1329 h -0.164 v -3.3477 c 0.7656,-0.2953 1.7339,-0.5574 2.9043,-0.7871 1.1812,-0.2406 2.2976,-0.3613 3.3476,-0.3613 z m -2.2148,21.4609 h 3.3457 v 3.4609 h -3.3457 z" />
+    <path
+       id="path48"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1391.3262,1913.1758 a 22.675175,22.675175 0 0 0 -22.6758,22.6738 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6738 z m -9.1641,17.4453 h 19.457 v 2.625 h -19.457 z m 0,6.8906 h 19.457 v 2.625 h -19.457 z" />
+    <text
+       xml:space="preserve"
+       id="text48"
+       style="font-size:19.5851px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect56);display:inline;fill:#e6e6e6;fill-opacity:1;paint-order:fill markers stroke"
+       transform="matrix(1.229319,0,0,1.2215405,378.77593,15.37386)"><tspan
+         x="595.99023"
+         y="1822.495"
+         id="tspan69"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan68">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1847.2032"
+         id="tspan71"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan70">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1871.9113"
+         id="tspan73"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan72">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1896.6194"
+         id="tspan75"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan74">Lorem ipsum Lorem ipsum </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text49"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect57);display:inline;fill:#f9f9f9;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(552,540)"><tspan
+         x="595.99023"
+         y="1831.3886"
+         id="tspan77"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan76">LH1 - katu 123</tspan></tspan></text>
+    <rect
+       style="fill:url(#linearGradient60);fill-opacity:1;stroke-width:0.37564;paint-order:fill markers stroke"
+       id="rect49"
+       width="346.10645"
+       height="533.86945"
+       x="1457.0077"
+       y="1854.3342"
+       ry="36.934364" />
+    <text
+       xml:space="preserve"
+       id="text50"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect58);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(902.86689,348.89223)"><tspan
+         x="591.57031"
+         y="1861.1228"
+         id="tspan79"><tspan
+           style="fill:#f2f2f2"
+           id="tspan78">Luokka 6</tspan></tspan></text>
+    <path
+       id="path50"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1771.3262,1864.3574 a 22.675175,22.675175 0 0 0 -22.6758,22.6758 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6758 z m -0.3809,9.6153 c 2.3516,0 4.2043,0.5741 5.5606,1.7226 1.3672,1.1375 2.0507,2.6414 2.0507,4.5117 0,1.0719 -0.1914,2.0309 -0.5742,2.8731 -0.3828,0.8312 -0.8863,1.5695 -1.5097,2.2148 -0.6126,0.6235 -1.3168,1.207 -2.1153,1.7539 -0.7984,0.5469 -1.646,1.0778 -2.5429,1.5918 v 3.6914 h -2.9375 v -5.0039 c 0.7109,-0.4047 1.4765,-0.8468 2.2968,-1.3281 0.8313,-0.4813 1.5102,-0.9687 2.0352,-1.4609 0.6344,-0.5688 1.1265,-1.1543 1.4766,-1.7559 0.35,-0.6125 0.5253,-1.3894 0.5253,-2.3301 0,-1.2359 -0.4214,-2.1543 -1.2636,-2.7558 -0.8313,-0.6125 -1.909,-0.918 -3.2325,-0.918 -1.1812,0 -2.3023,0.1848 -3.3632,0.5566 -1.0501,0.3719 -1.8817,0.75 -2.4942,1.1329 h -0.164 v -3.3477 c 0.7656,-0.2953 1.7339,-0.5574 2.9043,-0.7871 1.1812,-0.2406 2.2976,-0.3613 3.3476,-0.3613 z m -2.2148,21.4609 h 3.3457 v 3.4609 h -3.3457 z" />
+    <path
+       id="path51"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.700015;paint-order:fill markers stroke"
+       d="m 1771.3262,1913.1758 a 22.675175,22.675175 0 0 0 -22.6758,22.6738 22.675175,22.675175 0 0 0 22.6758,22.6758 22.675175,22.675175 0 0 0 22.6738,-22.6758 22.675175,22.675175 0 0 0 -22.6738,-22.6738 z m -9.1641,17.4453 h 19.457 v 2.625 h -19.457 z m 0,6.8906 h 19.457 v 2.625 h -19.457 z" />
+    <text
+       xml:space="preserve"
+       id="text51"
+       style="font-size:19.5851px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect59);display:inline;fill:#e6e6e6;fill-opacity:1;paint-order:fill markers stroke"
+       transform="matrix(1.229319,0,0,1.2215405,758.77593,15.37386)"><tspan
+         x="595.99023"
+         y="1822.495"
+         id="tspan81"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan80">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1847.2032"
+         id="tspan83"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan82">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1871.9113"
+         id="tspan85"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan84">Lorem ipsum Lorem ipsum </tspan></tspan><tspan
+         x="595.99023"
+         y="1896.6194"
+         id="tspan87"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan86">Lorem ipsum Lorem ipsum </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text52"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect60);display:inline;fill:#f9f9f9;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(932,540)"><tspan
+         x="595.99023"
+         y="1831.3886"
+         id="tspan89"><tspan
+           style="font-family:Arial;-inkscape-font-specification:Arial"
+           id="tspan88">LH1 - katu 123</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.607767;paint-order:fill markers stroke"
+       id="rect66"
+       width="550.27673"
+       height="879.0097"
+       x="67.114456"
+       y="1294.7128"
+       ry="32.031094" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="nav">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.867409;paint-order:fill markers stroke"
+       id="rect1"
+       width="1546.9919"
+       height="96"
+       x="186.50406"
+       y="32"
+       ry="48" />
+    <rect
+       style="fill:#f2cb05;fill-opacity:1;stroke-width:0.264701;paint-order:fill markers stroke"
+       id="rect7"
+       width="196.80371"
+       height="70.273422"
+       x="1492.7573"
+       y="44.863289"
+       ry="13.851364" />
+    <text
+       xml:space="preserve"
+       id="text8"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#000000;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(-445.25586,24.721817)"><tspan
+         x="680.56836"
+         y="64.716737"
+         id="tspan90">Luokkavaraus</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text9"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(858.7441,18.721817)"><tspan
+         x="680.56836"
+         y="72.015381"
+         id="tspan91">Varaa</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text11"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke" />
+    <rect
+       style="fill:#f2cb05;fill-opacity:1;paint-order:fill markers stroke"
+       id="rect14"
+       width="408.34061"
+       height="48.425018"
+       x="1252.0684"
+       y="854.90265"
+       ry="11.779085"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       id="text14"
+       style="font-size:29.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect15);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(-37.083765,2.884452)"><tspan
+         x="1316.6367"
+         y="885.32416"
+         id="tspan93"><tspan
+           style="fill:#1a1a1a"
+           id="tspan92">Varaa ja hyödynnä edut</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text63"
+       style="font-size:64px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect63);display:inline;fill:#000000;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(19.881788,1153.1218)"><tspan
+         x="680.56836"
+         y="96.344218"
+         id="tspan94">Luokat</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text67"
+       style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect67);display:inline;fill:#000000;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(-496.11821,1281.1218)"><tspan
+         x="680.56836"
+         y="81.746933"
+         id="tspan95">Suodattimet</tspan></text>
+    <rect
+       style="fill:#f2cb05;fill-opacity:1;stroke-width:0.264701;paint-order:fill markers stroke"
+       id="rect72"
+       width="196.80371"
+       height="70.273422"
+       x="392.75732"
+       y="2084.8633"
+       ry="13.851364" />
+    <text
+       xml:space="preserve"
+       id="text72"
+       style="font-size:37.3333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect73);display:inline;fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+       transform="translate(-225.2559,2058.7218)"><tspan
+         x="680.56836"
+         y="72.015381"
+         id="tspan96">Hae</tspan></text>
+  </g>
+</svg>

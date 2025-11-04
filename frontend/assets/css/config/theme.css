@@ -9,6 +9,9 @@
     --bg-container:#FAFAFA;
     /*for nav, or secondary containers*/
     --bg-nav:#fafafa;
+    /*buttons backgrounds*/
+    --bg-btn-main:#49A39A;
+    --bg-btn-secondary:#FFFFFF;
 
     /* ===============*/
     /* ==== TEXTS ====*/
