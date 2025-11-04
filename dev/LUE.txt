@@ -1,0 +1,1 @@
+KAIKKI VÄLIAIKAISET TIEDOSTOT JOILLA EI OLE MERKITYSTÄ siinä vaiheessa, kuten db dumpit
