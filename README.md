@@ -1,4 +1,4 @@
-# 🎨 Luokkavuokrausjärjestelmä  
+# 🎨 LUOKKAVARAUSJÄRJESTELMÄ  
 Koulun projekti  
 
 ## 🚀 Toteutus  
