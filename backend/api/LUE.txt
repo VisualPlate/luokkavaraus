@@ -1,0 +1,51 @@
+OHJE APIIN:
+
+COMMON/API.PHP = KÄYTTÄJILLE TARKOITETTU API. SISÄLTÄÄ VARAUKSET SEKÄ VÄLTTÄMÄTTÖMÄT KÄYTTÄJÄTIEDOT
+ADMIN/API.PHP = HALLITSIJOILLE TARKOITETTU API. KÄYTÄ VAIN SEN TARVITTAESSA. SISÄLTÄÄ VAIN KÄYTTÄJÄTIEDOT
+
+**TOIMINTA GET METHODILLA**
+
+
+[VALUE];
+
+[user]
+KEYN TIETOTYYPPI = INT,
+
+ANTAA TIEDOT = {                         **TIEDOT                              **TIETOTYYPPI          **VAIHTOEHDOT
+    "userId": 1,                         --KÄYTTÄJÄN ID                        => INT
+    "email": "alice@example.com",        --SÄHKÖPOSTI                          => STRING              => (vain admin/api.php)
+    "phoneNum": "555-1234",              --PUHELINNUMERO                       => STRING              => (vain admin/api.php)
+    "usertype": "student"                --ROOLI                               => STRING              => (teacher,student,admin,removed)
+}
+
+
+[userDate]
+KEYN TIETOTYYPPI = INT,
+
+ANTAA TIEDOT = {                         **TIEDOT                              **TIETOTYYPPI          **(VAIHTOEHDOT)
+    "userId": 1,                         --VARAAJAN ID                         => INT
+    "reservationId": 1,                  --ID VARAUKSELLE                      => INT
+    "reservationDate": "2025-11-04",     --VARAUKSEN AIKA                      => STRING
+    "reservationUseDate": "2025-11-05",  --VARAUKSEN TOTEUTUMISEN/KÄYTÖN AIKA  => STRING
+    "duration": 60,                      --VARAUKSEN KESTO MINUUTEISSA         => INT
+    "classId": 1,                        --LUOKAN ID VARAUKSELLE               => INT
+    "classCode": "A101",                 --LUOKAN KOODI VARAUKSELLE            => STRING
+    "floor": 1                           --LUOKAN KERROS VARATULLE AJALLE      => INT
+}
+
+[KEY];
+-ARVO JOKA ON VALUEN JÄLKEEN ESIM. OSOITE.COM?[VALUE]=[KEY]
+-JOS KEY ON 0, ANTAA API KAIKKI TIEDOT. JOS KYSE ON TIETYSTÄ KÄYTTÄJÄSTÄ KÄYTÄ MIELUMMIN TÄMÄN ID:TÄ
+
+PALAUTTAA MESSAGEN JOSSA TEKSTI "EMPTY", JOS TIETOA EI LÖYDY
+
+FRONTENDIN TOIMIVUUDEN TAKAAMISEKSI
+-KÄYTÄ VAADITTUA TIETOTYYPPIÄ [KEY] KOHDASSA
+-KÄYTÄ [VALUE] KOHDALLA VAIN PIENIÄ KIRJAIMIA
+
+**MUUTA**
+
+JOKAISESSA SQL KYSELYSSÄ ON KOMMENNTTI * //#TOSQLCOMMAND * 
+-HAE TÄMÄ API.PHP TIEDOSTOSTA TARKISTAKSEEN MITÄ TIETOJA KYSELY ANTAA TARVITTAESSA
+
+**TARKEMPIIN TIETOIHIN, KYSY LISÄÄ -- @VISUALPLATE, päivitetty 4.11.2025**
