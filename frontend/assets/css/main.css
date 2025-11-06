@@ -18,12 +18,26 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
 .col {flex-direction: column;}
 .row {flex-direction: row;}
 
+.col-cent {
+    height: 100%;
+    justify-content: center;
+}   
+
+.space-between {justify-content: space-between;}
+
 /*default full size container*/
 .container {
     width: 100%;
     background-color: var(--bg-container);
     padding: var(--container-padding);
 }
+/*Widths*/
+.w-100 {width: 100%;}
+.w-75 {width: 75%;}
+.w-50 {width: 50%;}
+.w-25 {width: 25%;}
+.w-10 {width: 10%;}
+
 /*grids*/
 .grid-rows-1,
 .grid-rows-2,
@@ -42,6 +56,47 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
 .grid-rows-6 {grid-template-columns: repeat(6, 2fr);}
 /*auto scale grid*/
 .grid-rows-auto-2 {grid-template-columns: repeat(2,2fr);}
+
+/*NAVBAR STYLES*/
+
+.text-user-navbar-header {
+    margin-left: 5px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    width: 120px;
+}
+.text-user-navbar {
+    margin-left: 5px;
+    font-size: 0.6rem;
+}
+.user-navbar {
+    width: 240px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--bg-container);
+    padding: var(--container-padding);
+}
+
+
+/*FIXED POSITIONS */
+.pos-top,
+.pos-bot,
+.pos-left,
+.pos-right {
+    position: fixed;
+}
+.pos-top {top: 0;}
+.pos-bot {bottom: 0;}
+.pos-left {left: 0;}
+.pos-right {right: 0;}
+
+/*margin*/
+.mrg-15 {
+    margin: 15px;
+}
+
 
 @media (max-width:600px) {
     .grid-rows-auto-2 {

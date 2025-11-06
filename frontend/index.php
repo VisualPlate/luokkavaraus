@@ -2,9 +2,8 @@
     <?php
     require_once("includes/htmlHead/htmlHead.php");
     ?>
-    <title>Document</title>
+    <title>INDEX</title>
 </head>
 <body>
-    
 </body>
 </html>
