@@ -1,7 +1,9 @@
 <?php
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
+<head>
     <title>Kirjaudu sisään</title>
+    <link rel="stylesheet" href="signin.css">
 </head>
 <body>
      <div class="grid-rows-2 grid-cent max-1200">
