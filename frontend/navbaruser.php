@@ -9,5 +9,10 @@
     <?php
     require_once("includes/navbar/navBarUser.php");
     ?>
+
+    <br><br>
+    <?php
+    require_once("includes/navbar/navbar.php");
+    ?>
 </body>
 </html>
