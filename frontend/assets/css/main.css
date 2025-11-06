@@ -112,11 +112,17 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
 .mrg-10 {
     margin: 10px;
 }
+.mrg-5 {
+    margin: 5px;
+}
 .mrg-in-15 {
     margin-inline: 15px;
 }
 .mrg-in-10 {
     margin-inline: 10px;
+}
+.mrg-in-5 {
+    margin-inline: 5px;
 }
 
 
