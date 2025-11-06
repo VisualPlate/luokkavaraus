@@ -6,3 +6,4 @@
     <link rel="stylesheet" href="assets/css/config/general.css">
     <link rel="stylesheet" href="assets/css/config/theme.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">

@@ -71,12 +71,25 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
     margin-left: 5px;
     font-size: 0.6rem;
 }
+.text-user-navbar-secondary {
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
 .user-navbar {
     width: 240px;
     height: 48px;
     border-radius: 24px;
     background-color: var(--bg-container);
     padding: var(--container-padding);
+    border: var(--bg-btn-main) solid 2px;
+}
+.user-navbar-open {
+    width: 240px;
+    height: 100%;
+    border-radius: 24px;
+    background-color: var(--bg-container);
+    padding: var(--container-padding);
+    border: var(--bg-btn-main) solid 2px;
 }
 
 
@@ -95,6 +108,15 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
 /*margin*/
 .mrg-15 {
     margin: 15px;
+}
+.mrg-10 {
+    margin: 10px;
+}
+.mrg-in-15 {
+    margin-inline: 15px;
+}
+.mrg-in-10 {
+    margin-inline: 10px;
 }
 
 

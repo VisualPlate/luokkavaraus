@@ -1,0 +1,22 @@
+@keyframes rotate-clockwise-to-90 {
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(90deg); }
+}
+.rotate-clockwise-to-90 {
+  animation: rotate-clockwise-to-90 0.5s ease-in-out forwards;
+}
+.rotate-clockwise-to-90-reverse {
+  animation: rotate-clockwise-to-90 0.5s ease-in-out reverse;
+}
+
+@keyframes burger-menu {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.burger-menu-open {
+  animation: burger-menu 0.2s ease-in-out forwards;
+}
+.burger-menu-close {
+  animation: burger-menu 0.2s ease-in-out reverse;
+}
