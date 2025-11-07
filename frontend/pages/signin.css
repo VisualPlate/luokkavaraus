@@ -1,66 +1,176 @@
-
-.text-primary {
-     white-space: nowrap;
-    overflow: hidden; 
-
-}
-
-
-input[type=submit] {
-   width: 100%;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: var(--bg-btn-main);
-  }
-
-  .submit:hover {
-    cursor: pointer;
-    background-color: black;
-
-  }
-
 body {
   background-color: #f0f4f5;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Grid-container */
+.grid-rows-auto-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.max-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.img-container {
+  width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.text-primary {
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: var(--bg-btn-main);
+  margin-top: 40px;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: rgb(36, 238, 208);
 }
 
 .login-container {
   background-color: white;
   border: 8px solid var(--bg-btn-main);
-  border-radius: 40px;
-  padding: 30px 40px;
-  width: 500px;
+  border-radius: 60px;
+  padding: 60px;
+  width: 100%;
+  max-width: 600px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  min-height: 700px;
+  box-sizing: border-box;
 }
-
 
 form label {
   display: block;
-  margin-top: 10px;
+  margin-top: 25px;
   font-weight: bold;
+  padding: 20px;
 }
 
 form input {
   width: 100%;
-  padding: 8px;
+  padding: 11px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .home-icon {
-  text-decoration: none;
   font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.home-icon img {
+  width: 30px;
+  height: 30px;
 }
 
 .create-account {
-  text-decoration: none;
   color: #008080;
   font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+}
+
+.create-account:hover {
+  cursor: pointer;
+  background-color: rgb(36, 238, 208);
+}
+
+.home-icon:hover {
+  cursor: pointer;
+  background-color: rgb(36, 238, 208);
+}
+
+.kontti {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobiili-responsiivisuus */
+@media (max-width: 900px) {
+  .grid-rows-auto-2 {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .img-container {
+    order: -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-rows-auto-2 {
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .login-container {
+    min-height: auto;
+    padding: 40px 30px 80px;
+    border-radius: 30px;
+    border-width: 4px;
+  }
+
+  form label {
+    padding: 10px 0;
+    margin-top: 15px;
+  }
+
+  form input {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  input[type=submit] {
+    padding: 12px 15px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .home-icon,
+  .create-account {
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  .img-container {
+    max-width: 300px;
+  }
 }

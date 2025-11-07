@@ -6,11 +6,11 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     <link rel="stylesheet" href="signin.css">
 </head>
 <body>
-     <div class="grid-rows-2 grid-cent max-1200">
+     <div class="grid-rows-auto-2 grid-cent max-1200">
         <div class="img-container">
     <img src="../assets/images/loginimg.png" alt="">
         </div>
-        <div>
+        <div class="kontti">
     <div class="login-container">
         
         <h1 class = "text-primary">Kirjaudu sisään:</h1>
