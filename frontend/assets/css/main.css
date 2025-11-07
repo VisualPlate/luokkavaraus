@@ -115,7 +115,9 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
     padding-inline: 20px;
     position: fixed;
     top: 0;
-    left: calc(50% - 510px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
 }
 
 .navbar-btn{
