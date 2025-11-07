@@ -102,7 +102,8 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
     padding-inline: 20px;
     position: fixed;
     top: 0;
-    left: calc(50% - 510px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar-btn{
@@ -154,5 +155,9 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
 @media (max-width:600px) {
     .grid-rows-auto-2 {
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .navbar{
+        max-width: 600px;
     }
 }
