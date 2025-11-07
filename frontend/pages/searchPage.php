@@ -9,7 +9,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     <?php
         require_once("../includes/navbar/navbarUserPages.php");
     ?>
-    <div class="mrg-15">
+    <div class="mrg-15 main-content">
         <h1>Luokat</h1>
 
         <div class="row">
@@ -27,7 +27,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                         <img src="../assets/icons/info-green.svg" alt="" class="result-btn">
                         <img src="../assets/icons/burger-menu-green.svg" alt="" class="result-btn">
                     </div>
-                    
+
                     <h3 class="result-header">Luokka</h3>
                     <p class="result-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nam totam cumque minima atque soluta molestias accusamus saepe iste!</p>
                 </div>
