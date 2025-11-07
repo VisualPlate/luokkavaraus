@@ -88,6 +88,7 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
     background-color: var(--bg-container);
     padding: var(--container-padding);
     border: var(--bg-btn-main) solid 2px;
+    z-index: 5;
 }
 .user-navbar-open {
     width: 240px;
@@ -104,6 +105,7 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
     background-color: var(--bg-container);
     padding: var(--container-padding);
     border-bottom: var(--bg-btn-main) solid 2px;
+    z-index: 5;
 }
 .navbar {
     max-width: 1020px;
@@ -130,7 +132,7 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
 }
 
 .navbar-btn:hover{
-     background-color: rgb(36, 238, 208);
+    background-color: rgb(36, 238, 208);
     cursor: pointer;
 }
 
@@ -185,6 +187,22 @@ h1, h2, h3, h4, h5, h6, p {margin: 0;padding: 0;}
         display: none;
     }
     .tab-hidden {
+        display: block;
+    }
+}
+@media (max-width:600px) {
+    .mob-show {
+        display: block;
+    }
+    .mob-hidden {
+        display: none;
+    }
+}
+@media (min-width:600px) {
+    .mob-show {
+        display: none;
+    }
+    .mob-hidden {
         display: block;
     }
 }

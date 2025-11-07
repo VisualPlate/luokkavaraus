@@ -9,7 +9,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     require_once("../includes/navbar/navbarUserPages.php");
     ?>
     <div class="a-center">
-        <div class="max-600 grid-rows-1 grid-cent container">
+        <div class="max-600 grid-rows-1 grid-cent container scroll">
             <form method="post">
                 <div class="grid-rows-2 mrg-10">
                     <img src="../assets/icons/user-placeholder.svg" style="height:96px">
@@ -48,3 +48,10 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     </div>
 </body>
 </html>
+<?php
+$rm = $_SERVER['REQUEST_METHOD'];
+
+if ($rm === "POST") {
+    var_dump($_POST);
+}
+?>

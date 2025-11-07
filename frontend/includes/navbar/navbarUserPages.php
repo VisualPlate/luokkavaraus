@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mob-hidden">
             <a href=""><img src="../assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
             <a href="logout.php"><img src="../assets/icons/navbar-door-open-red.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
         </div>
