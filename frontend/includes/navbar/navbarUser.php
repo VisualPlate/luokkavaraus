@@ -22,12 +22,12 @@
     <div class="user-navbar-open space-between col" id="userDropdown">
         <div class="row space-between mrg-in-10">
             <a href="#" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Omat varaukset</a>
-            <img src="assets/icons/house-green.svg" style="height:24px;isplay:flex;align-self:center">
+            <img src="assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center">
         </div>
         <div class="mrg-5"></div>
         <div class="row space-between mrg-in-10">
             <a href="#" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Kirjaudu ulos</a>
-            <img src="assets/icons/house-green.svg" style="height:24px;isplay:flex;align-self:center">
+            <img src="assets/icons/navbar-door-open-red.svg" style="height:24px;isplay:flex;align-self:center">
         </div>
     </div>
 </div>
