@@ -1,5 +1,6 @@
 <?php
 require_once("../includes/htmlHead/htmlHeadPages.php");
+require("../../backend/services/db/db.php")
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
     <title>Luo Tili</title>
@@ -53,5 +54,8 @@ $rm = $_SERVER['REQUEST_METHOD'];
 
 if ($rm === "POST") {
     var_dump($_POST);
+    //#TOSQLCOMMAND
+    $stmt = $pdo->prepare("SELECT userId, email, phoneNum, usertype FROM users");
+    $stmt->execute();
 }
 ?>
