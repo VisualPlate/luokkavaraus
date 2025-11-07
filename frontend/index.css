@@ -1,0 +1,22 @@
+body {
+    background-color: #f0f4f5 ;
+}
+
+
+.hero-bg {
+    max-width: 2000px;
+    display: flex;
+    justify-self: center ;
+    width: 97%;
+    aspect-ratio: 16 / 9;
+    background: url(assets/images/classroomimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+.class-img {
+
+}
