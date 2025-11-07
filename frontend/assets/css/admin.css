@@ -8,6 +8,13 @@ input, select {
     border: none;
     line-height: 2;
 }
+.container-secondary {
+    background-color: var(--bg-nav);
+    padding: 5px;
+}
+.container-secondary a {
+    color: var(--text-secondary);
+}
 .btn-main {
     background-color: var(--bg-btn-main);
     border: none;
@@ -21,8 +28,31 @@ input, select {
     justify-self: right;
     justify-content: center;
 }
+.btn-back {
+    background-color: #d85a5a;
+    border: none;
+    color: #ffffff;
+    padding-block: 6px;
+    padding-inline: 12px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    width: 50%;
+    display: flex;
+    justify-self: left;
+    justify-content: center;
+}
 .divider {
     width: 100%;
     height: 2px;
     background-color: var(--bg-btn-main);
+}
+
+.scroll {
+    overflow-x: auto;
+}
+.a-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh
 }

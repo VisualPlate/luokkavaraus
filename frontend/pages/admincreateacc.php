@@ -8,42 +8,43 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     <?php
     require_once("../includes/navbar/navbarUserPages.php");
     ?>
-    <div class="max-600 grid-rows-1 grid-cent container">
-        <form method="post">
-            <div class="grid-rows-2 mrg-10">
-                <img src="../assets/icons/user-placeholder.svg" style="height:96px">
-                <h1>Luo Tili</h1>
-            </div>
-            <div class="col">
+    <div class="a-center">
+        <div class="max-600 grid-rows-1 grid-cent container">
+            <form method="post">
                 <div class="grid-rows-2 mrg-10">
-                    <label for="type">Tyyppi</label>
-                    <select name="type" id="type">
-                        <option value="student">Oppilas</option>
-                        <option value="teacher">Opettaja</option>
-                        <option value="admin">Admin</option>
-                        <option value="removed">Poistettu</option>
-                    </select>
+                    <img src="../assets/icons/user-placeholder.svg" style="height:96px">
+                    <h1>Luo Tili</h1>
                 </div>
-                <div class="grid-rows-2 mrg-10">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                <div class="col">
+                    <div class="grid-rows-2 mrg-10">
+                        <label for="type">Tyyppi</label>
+                        <select name="type" id="type">
+                            <option value="student">Oppilas</option>
+                            <option value="teacher">Opettaja</option>
+                            <option value="admin">Admin</option>
+                            <option value="removed">Poistettu</option>
+                        </select>
+                    </div>
+                    <div class="grid-rows-2 mrg-10">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="grid-rows-2 mrg-10">
+                        <label for="puh">Puh</label>
+                        <input type="puh" name="puh" id="puh" required>
+                    </div>
+                    <div class="grid-rows-2 mrg-10">
+                        <label for="pass">Salasana</label>
+                        <input type="password" name="pass" id="pass" required>
+                    </div>
                 </div>
-                <div class="grid-rows-2 mrg-10">
-                    <label for="puh">Puh</label>
-                    <input type="puh" name="puh" id="puh">
-                </div>
-                <div class="grid-rows-2 mrg-10">
-                    <label for="pass">Salasana</label>
-                    <input type="password" name="pass" id="pass">
-                </div>
-            </div>
                 <div class="divider"></div>
                 <div class="grid-rows-2 mrg-10">
-                    <div>
-                    </div>
+                    <a href="adminusers.php" class="btn-back">Takaisin</a>
                     <button type="submit" class="btn-main">Luo Tili</button>
                 </div>
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 </html>
