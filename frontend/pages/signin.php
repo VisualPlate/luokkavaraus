@@ -24,8 +24,8 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
      
         </form>
         
-      <a href="" class="home-icon"><img src="../assets/icons/house-green.svg" alt="etusivulle"></a>
-      <a href="" class="create-account">Luo tili</a>
+      <a href="frontend/index.php" class="home-icon"><img src="../assets/icons/house-green.svg" alt="etusivulle"></a>
+      <a href="admincreateacc.php" class="create-account">Luo tili</a>
     
     </div>
         </div>
