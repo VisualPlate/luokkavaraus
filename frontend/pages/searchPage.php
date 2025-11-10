@@ -1,4 +1,5 @@
 <?php
+require("../../backend/services/sessions/start.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
 

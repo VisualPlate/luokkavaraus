@@ -1,6 +1,11 @@
+
+
 <?php
+require("../../backend/services/sessions/start.php");
+require("../../backend/services/admincheck/check.php");
+
 require_once("../includes/htmlHead/htmlHeadPages.php");
-require("../../backend/services/db/db.php")
+require("../../backend/services/db/db.php");
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
     <title>Luo Tili</title>
@@ -51,11 +56,17 @@ require("../../backend/services/db/db.php")
 </html>
 <?php
 $rm = $_SERVER['REQUEST_METHOD'];
-
 if ($rm === "POST") {
-    var_dump($_POST);
-    //#TOSQLCOMMAND
-    $stmt = $pdo->prepare("SELECT userId, email, phoneNum, usertype FROM users");
-    $stmt->execute();
+    $userType = $_POST["type"] ?? null;
+    $email = $_POST["email"] ?? null;
+    $phoneNum = $_POST["puh"] ?? null;
+    $pass = password_hash($_POST["pass"] ?? null, PASSWORD_BCRYPT);
+
+    if ($email !== null && $phoneNum !== null && $pass !== null) {
+        //#TOSQLCOMMAND
+        $stmt = $pdo->prepare("INSERT INTO users ( email, phoneNum, passHash, usertype) VALUES (?,?,?,?)");
+        $stmt->execute([$email, $phoneNum, $pass, $userType]);
+        $_SESSION["createdAcc"] = true;
+    }
 }
 ?>

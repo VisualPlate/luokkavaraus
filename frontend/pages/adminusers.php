@@ -1,4 +1,7 @@
 <?php
+require("../../backend/services/sessions/start.php");
+require("../../backend/services/admincheck/check.php");
+require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
@@ -13,7 +16,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             <div class="grid-rows-1 mrg-10">
                 <h1>Käyttäjät</h1>
             </div>
-            <div class="col scroll">
+            <div class="col scroll" id="list">
                 <div class="row space-between">
                     <p>user1</p>
                     <div class="row container-secondary space-between w-50">
@@ -23,24 +26,18 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                     </div>
                 </div>
                 <div class="mrg-5"></div>
-                <div class="row space-between">
-                    <p>user2</p>
-                    <div class="row container-secondary space-between w-50">
-                        <a href="#">Tiedot</a>
-                        <a href="#">Muokkaa</a>
-                        <a href="#">Poista</a>
-                    </div>
-                </div>
-                <div class="mrg-5"></div>
-                <div class="row space-between">
-                    <p>user3</p>
-                    <div class="row container-secondary space-between w-50">
-                        <a href="#">Tiedot</a>
-                        <a href="#">Muokkaa</a>
-                        <a href="#">Poista</a>
-                    </div>
-                </div>
             </div>
+            <script>
+                const apiUrl = "../../backend/api/admin/api.php";
+                //not ready
+                async function fetchContent() {
+                    const res = fetch(apiUrl) {
+                        .
+                    }   
+                }
+
+                const list = document.getElementById("list");
+            </script>
             <div class="mrg-5"></div>
             <div class="divider"></div>
             <div class="grid-rows-2 mrg-10">
