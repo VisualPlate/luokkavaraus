@@ -1,5 +1,6 @@
 <?php
 require("../../backend/services/sessions/start.php");
+require("../../backend/services/logincheck/check.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 require_once("../../backend/services/db/db.php");
 ?>

@@ -1,5 +1,10 @@
 <?php
 require("../../backend/services/sessions/start.php");
+
+if (isset($_SESSION["logged_in"])) {
+    header("location: searchpage.php");
+    exit;
+}
 require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
@@ -50,9 +55,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                     <input type="submit" value="kirjaudu" class="submit">
                 </form>
             
-                <a href="" class="home-icon"><img src="../assets/icons/house-green.svg" alt="etusivulle"></a>
-                <a href="" class="create-account">Luo tili</a>
-                
+                <a href="../" class="home-icon"><img src="../assets/icons/house-green.svg" alt="etusivulle"></a>
             </div>
         </div>
     </div>

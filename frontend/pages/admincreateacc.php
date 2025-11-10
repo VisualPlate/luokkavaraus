@@ -1,5 +1,3 @@
-
-
 <?php
 require("../../backend/services/sessions/start.php");
 require("../../backend/services/admincheck/check.php");
