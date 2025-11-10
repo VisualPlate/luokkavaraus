@@ -20,16 +20,16 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                 <button class="search-btn">Hae</button>
             </div>
 
-            <div class="mrg-15 result-container grid-rows-3">
+            <div class='mrg-15 result-container grid-rows-3'>
                 
-                <div class="result">
-                    <div class="col">
-                        <img src="../assets/icons/info-green.svg" alt="" class="result-btn">
-                        <img src="../assets/icons/burger-menu-green.svg" alt="" class="result-btn">
+                <div class='result'>
+                    <div class='col'>
+                        <img src='../assets/icons/info-green.svg' alt='' class='result-btn'>
+                        <img src='../assets/icons/burger-menu-green.svg' alt='' class='result-btn'>
                     </div>
 
-                    <h3 class="result-header">Luokka</h3>
-                    <p class="result-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nam totam cumque minima atque soluta molestias accusamus saepe iste!</p>
+                    <h3 class='result-header'>Luokka</h3>
+                    <p class='result-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nam totam cumque minima atque soluta molestias accusamus saepe iste!</p>
                 </div>
 
             </div>
