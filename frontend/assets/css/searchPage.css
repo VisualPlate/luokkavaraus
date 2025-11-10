@@ -21,7 +21,6 @@ h1{
     border-radius: 10px;
     border: none;
     background-color: var(--bg-btn-main);
-    color: white;
     padding-inline: 20px;
     position: relative;
     left: calc(100% - 50px);
@@ -40,18 +39,26 @@ h1{
     max-height: 500px;
 }
 
-.result-text,.result-header{
+.result-text,.result-header,.result-btn,.search-btn{
     color: white;
 }
 
 .result-btn{
-    position: relative;
-    left: 85%;
+    margin-top: 15px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-btn-main);
+    padding-inline: 20px;
+    text-align: center;
+    justify-items: center;
 
-    width: 2rem;
-    height: 2rem;
+    text-decoration: none;
+}
 
-    margin: 2px;
+.result-btn:hover,.search-btn:hover{
+    cursor: pointer;
 }
 
 .main-content{
