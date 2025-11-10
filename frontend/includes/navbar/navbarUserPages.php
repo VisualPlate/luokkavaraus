@@ -7,10 +7,7 @@
             </div>
             <div class="col col-cent">
                 <div>
-                    <p class="text-primary text-user-navbar-header">admin administrator</p>
-                </div>
-                <div>
-                    <p class="text-user-navbar">admin@admin.admin</p>
+                    <p class="text-primary text-user-navbar-header"><?= $_SESSION["email"]; ?></p>
                 </div>
             </div>
         </div>
@@ -21,12 +18,12 @@
     <div class="mrg-10"></div>
     <div class="user-navbar-open space-between col" id="userDropdown">
         <div class="row space-between mrg-in-10">
-            <a href="#" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Omat varaukset</a>
+            <a href="reservations.php" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Omat varaukset</a>
             <img src="../assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center">
         </div>
         <div class="mrg-5"></div>
         <div class="row space-between mrg-in-10">
-            <a href="#" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Kirjaudu ulos</a>
+            <a href="logout.php" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Kirjaudu ulos</a>
             <img src="../assets/icons/navbar-door-open-red.svg" style="height:24px;isplay:flex;align-self:center">
         </div>
     </div>
@@ -40,15 +37,12 @@
             </div>
             <div class="col col-cent">
                 <div>
-                    <p class="text-primary text-user-navbar-header">admin administrator</p>
-                </div>
-                <div>
-                    <p class="text-user-navbar">admin@admin.admin</p>
+                    <p class="text-primary text-user-navbar-header"><?= $_SESSION["email"]; ?></p>
                 </div>
             </div>
         </div>
         <div class="row mob-hidden">
-            <a href=""><img src="../assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
+            <a href="reservations.php"><img src="../assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
             <a href="logout.php"><img src="../assets/icons/navbar-door-open-red.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
         </div>
     </div>
