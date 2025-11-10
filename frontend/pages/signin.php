@@ -19,7 +19,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             <label for="Käyttäjätunnus">Käyttäjätunnus:</label> <br>
         <input type="text" id="username">  <br>
         <label for="Salasana:">Salasana:</label> <br>  
-        <input type="text" id="password"> <br>
+        <input type="password" id="password"> <br>
         <input type="submit" value="kirjaudu" class="submit">
      
         </form>

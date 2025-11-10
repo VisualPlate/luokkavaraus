@@ -1,0 +1,25 @@
+Kirjautumissivu / Login 
+
+responsiivinen kirjautumissivu PHP:lla ja CSS:llä toteutettuna.
+
+Responsiivisuus:
+Tietokoneella yli 900px
+
+Näkymä:
+
+Kuva ja lomake vierekkäin
+Maksimileveys 1200px
+
+Tabletti 600px - 900px
+
+
+Puhelimella alle 600px
+
+Kuvan maksimileveys 300px
+
+CSS
+Projekti käyttää CSS-muuttujia teemaväreille:
+css--bg-btn-main 
+
+Tekijä:
+Justus                                     
