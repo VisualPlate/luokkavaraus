@@ -46,15 +46,6 @@ require_once("../../backend/services/db/db.php");
                 }
                 
                 ?>
-                <!-- <div class='result'>
-                    <div class='col'>
-                        <img src='../assets/icons/info-green.svg' alt='' class='result-btn'>
-                        <img src='../assets/icons/burger-menu-green.svg' alt='' class='result-btn'>
-                    </div>
-
-                    <h3 class='result-header'>Luokka</h3>
-                    <p class='result-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsum nam totam cumque minima atque soluta molestias accusamus saepe iste!</p>
-                </div> -->
 
             </div>
         </div>
