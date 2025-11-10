@@ -15,11 +15,11 @@ require_once("../../backend/services/db/db.php");
 
         <div class="row">
 
-            <div class="filters-container mrg-15">
+            <!-- <div class="filters-container mrg-15">
                 <h2 class="center">Suodattimet</h2>
 
                 <button class="search-btn">Hae</button>
-            </div>
+            </div> -->
 
             <div class='mrg-15 result-container grid-rows-3'>
                 <?php
