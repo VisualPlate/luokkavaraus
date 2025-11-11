@@ -49,6 +49,9 @@ input, select {
 
 .scroll {
     overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+    z-index: 1;
 }
 .a-center {
     display: flex;
