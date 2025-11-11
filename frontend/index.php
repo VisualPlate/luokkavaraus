@@ -2,7 +2,7 @@
     <?php
     require_once("includes/htmlHead/htmlHead.php");
     ?>
-    <title>INDEX</title>
+    <title>Koti</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>

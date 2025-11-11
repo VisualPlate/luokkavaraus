@@ -1,12 +1,14 @@
 <?php
 require("../../backend/services/sessions/start.php");
-require("../../backend/services/logincheck/check.php");
+require("../../backend/services/admincheck/check.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 require_once("../../backend/services/db/db.php");
+
+//this page is for checking all of the reservations. THIS IS ADMIN ONLY PAGE
 ?>
 
     <link rel="stylesheet" href="../assets/css/searchPage.css">
-    <title>Haku</title>
+    <title>Kaikki varaukset</title>
 </head>
 <body>
     <?php
@@ -25,6 +27,7 @@ require_once("../../backend/services/db/db.php");
 
             <div class='mrg-15 result-container grid-rows-3'>
                 <?php
+
                 //get classroom data from database
                 $stmt = $pdo->prepare("
                 SELECT class.classId, class.classCode, class.floor, reservation.reservationUseDate, reservation.duration 
@@ -36,18 +39,17 @@ require_once("../../backend/services/db/db.php");
                 while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
 
                     echo "<div class='result'>
-                    "./*placeholder text*/"
-                    <h3 class='result-header'>Otsikko</h3>
-                    <p class='result-text'>Teksti</p>
+                    
+                    <h3 class='result-header'>{$result["classCode"]}</h3>
+                    <p class='result-text'>Kerros: {$result["floor"]}</p>
+                    <p class='result-text'>Varattu {$result["reservationUseDate"]}, {$result["duration"]} min</p>
                     <div class='col'>
-                    <a class='result-btn' href='reservate.php?classId={$result["classId"]}'>Varaa</a>
                     </div>
                 </div>";
                     
                 }
                 
                 ?>
-
             </div>
         </div>
     </div>

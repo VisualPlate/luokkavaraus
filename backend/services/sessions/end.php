@@ -1,4 +1,4 @@
 <?php
-session_abort();
 session_destroy();
+session_abort();
 ?>

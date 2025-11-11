@@ -1,11 +1,59 @@
-
-
 <?php
 require("../../backend/services/sessions/start.php");
 require("../../backend/services/admincheck/check.php");
+require("../../backend/services/db/db.php");
+
+$rm = $_SERVER['REQUEST_METHOD'];
+$errors = "";
+if ($rm === "POST") {
+    $userType = $_POST["type"] ?? null;
+    $email = $_POST["email"] ?? null;
+    $phoneNum = $_POST["puh"] ?? null;
+    $passRaw = $_POST["pass"] ?? null;
+
+    if ($email && $phoneNum && $passRaw) {
+        // Use the global PDO instance
+        global $pdo;
+
+        try {
+            // Check if account already exists (by email OR phone number)
+            $checkStmt = $pdo->prepare("SELECT userId FROM users WHERE email = ? OR phoneNum = ?");
+            $checkStmt->execute([$email, $phoneNum]);
+            $existingUser = $checkStmt->fetch(PDO::FETCH_ASSOC);
+
+            if ($existingUser) {
+                // Account already exists
+                $_SESSION["createdAcc"] = false;
+                $errors = "Tili on jo olemassa samalla sähköpostilla tai puhelinnumerolla";
+            } else {
+                // Create new account
+                $passHash = password_hash($passRaw, PASSWORD_BCRYPT);
+
+                $stmt = $pdo->prepare("
+                    INSERT INTO users (email, phoneNum, passHash, usertype)
+                    VALUES (?, ?, ?, ?)
+                ");
+                $stmt->execute([$email, $phoneNum, $passHash, $userType]);
+
+                $_SESSION["createdAcc"] = true;
+            }
+        } catch (PDOException $e) {
+            $_SESSION["createdAcc"] = false;
+            $errors = "Tietokantavirhe: " . $e->getMessage();
+        }
+    } else {
+        $_SESSION["createdAcc"] = false;
+        $errors = "Syötekentässä on virheellisiä tietoja";
+    }
+}
+
+//checks if accounte already created
+if (isset($_SESSION["createdAcc"]) && $_SESSION["createdAcc"] === true) {
+    unset($_SESSION["createdAcc"]);
+    header("location: adminusers.php");
+}          
 
 require_once("../includes/htmlHead/htmlHeadPages.php");
-require("../../backend/services/db/db.php");
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
     <title>Luo Tili</title>
@@ -14,6 +62,8 @@ require("../../backend/services/db/db.php");
     <?php
     require_once("../includes/navbar/navbarUserPages.php");
     ?>
+
+
     <div class="a-center">
         <div class="max-600 grid-rows-1 grid-cent container scroll">
             <form method="post">
@@ -49,24 +99,13 @@ require("../../backend/services/db/db.php");
                     <a href="adminusers.php" class="btn-back">Takaisin</a>
                     <button type="submit" class="btn-main">Luo Tili</button>
                 </div>
+                <?php if (isset($_SESSION["createdAcc"]) && $_SESSION["createdAcc"] === false):?>
+                    <h3>Virhe luonnissa: <?=$errors?></h3>
+                <?php 
+                unset($_SESSION["createdAcc"]);
+                endif ?>
             </form>
         </div>
     </div>
 </body>
 </html>
-<?php
-$rm = $_SERVER['REQUEST_METHOD'];
-if ($rm === "POST") {
-    $userType = $_POST["type"] ?? null;
-    $email = $_POST["email"] ?? null;
-    $phoneNum = $_POST["puh"] ?? null;
-    $pass = password_hash($_POST["pass"] ?? null, PASSWORD_BCRYPT);
-
-    if ($email !== null && $phoneNum !== null && $pass !== null) {
-        //#TOSQLCOMMAND
-        $stmt = $pdo->prepare("INSERT INTO users ( email, phoneNum, passHash, usertype) VALUES (?,?,?,?)");
-        $stmt->execute([$email, $phoneNum, $pass, $userType]);
-        $_SESSION["createdAcc"] = true;
-    }
-}
-?>

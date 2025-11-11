@@ -5,7 +5,7 @@ require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
-    <title>Luo Tili</title>
+    <title>Kaikki Käyttäjät</title>
 </head>
 <body>
     <?php
@@ -29,7 +29,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             </div>
             <script>
                 const apiUrl = "../../backend/api/admin/api.php";
-                //not ready
+                //not ready. needs function to fetch data from api
                 async function fetchContent() {
                     const res = fetch(apiUrl) {
                         .
