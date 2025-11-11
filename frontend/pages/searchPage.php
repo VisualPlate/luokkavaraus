@@ -36,12 +36,11 @@ require_once("../../backend/services/db/db.php");
                 while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
 
                     echo "<div class='result'>
-                    
-                    <h3 class='result-header'>{$result["classCode"]}</h3>
-                    <p class='result-text'>Kerros: {$result["floor"]}</p>
-                    <p class='result-text'>Varattu {$result["reservationUseDate"]}, {$result["duration"]} min</p>
+                    "./*placeholder text*/"
+                    <h3 class='result-header'>Otsikko</h3>
+                    <p class='result-text'>Teksti</p>
                     <div class='col'>
-                    <a class='result-btn' href='#'>Varaa</a>
+                    <a class='result-btn' href='reservate.php?classId={$result["classId"]}'>Varaa</a>
                     </div>
                 </div>";
                     
