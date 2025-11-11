@@ -3,6 +3,8 @@
 
     <img src="assets/icons/house-green.svg" style="height: 100%">
 
-    <button class="navbar-btn">Varaa</button>
+    <button class="navbar-btn" onclick="window.location.href=''">Varaa</button>
+
+    <button class="navbar-btn" onclick="window.location.href='pages/searchPage.php'">hae</button>
 </div>
 
