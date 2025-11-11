@@ -42,7 +42,6 @@ require_once("../../backend/services/db/db.php");
                     <p class='result-text'>Kerros: {$result["floor"]}</p>
                     <p class='result-text'>Varattu {$result["reservationUseDate"]}, {$result["duration"]} min</p>
                     <div class='col'>
-                    <a class='result-btn' href='#'>Varaa</a>
                     </div>
                 </div>";
                     
