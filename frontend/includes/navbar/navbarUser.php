@@ -1,4 +1,5 @@
 <!--NAVBAR TO LOGGED IN USERS-->
+<!--Most likely unfished and wont work, but this one never had an purpose anyways-->
 <div class="pos-top pos-right mrg-15 tab-hidden">
     <div class="user-navbar row space-between">
         <div class="row">

@@ -37,7 +37,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                 <form method="post">
                     <label for="login">Sähköposti tai puhelinnumero:</label> <br>
                     <input type="text" name="login">  <br>
-                    <label for="pass:">Salasana:</label> <br>  
+                    <label for="pass">Salasana:</label> <br>  
                     <input type="password" name="pass"> <br>
                     <input type="submit" value="kirjaudu" class="submit">
                 </form>
