@@ -17,62 +17,32 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                 <h1>Käyttäjät</h1>
             </div>
             <div class="col scroll" id="list">
-                
+                <div class="row space-between">
+                    <p>user1</p>
+                    <div class="row container-secondary space-between w-50">
+                        <a href="#">Tiedot</a>
+                        <a href="#">Muokkaa</a>
+                        <a href="#">Poista</a>
+                    </div>
+                </div>
+                <div class="mrg-5"></div>
             </div>
             <script>
-
-                const apiUrl = "../../backend/api/admin/api.php?user=0";
-                
-                fetchContent();
-
-                async function fetchContent() { 
-                    fetch(apiUrl)
-                        .then((response) => response.text())
-                        .then((text) => searchFromApi(text))
-                        .catch(error => console.error('Error:', error));
+                const apiUrl = "../../backend/api/admin/api.php";
+                //not ready. needs function to fetch data from api
+                async function fetchContent() {
+                    const res = fetch(apiUrl) {
+                        .
+                    }   
                 }
 
-                function searchFromApi(text) {
-                    const row = JSON.parse(text);
-
-                    for (let ri = 0; ri < row.length; ri++) {
-                        outputArray = [
-                            row[ri].userId,
-                            row[ri].email,
-                            row[ri].phoneNum,
-                            row[ri].usertype
-                        ]
-                        //hides removed accounts
-                        if (outputArray[3] !== "removed") {
-                            const internalOutputDiv = document.createElement("div")
-
-                            const outputDiv = document.getElementById("list");
-                            for (let i = 0; i < outputArray.length; i++) {           
-                                const newParagraph = document.createElement("p")
-                                const outputText = outputArray[i]
-                                newParagraph.textContent = outputText
-                                outputDiv.appendChild(internalOutputDiv)
-                                internalOutputDiv.appendChild(newParagraph)
-                            }
-
-                            const html = `
-                            <div class="row container-secondary space-between w-100">
-                                <a href="adminedit.php?id=${outputArray[0]}">Muokkaa</a>
-                                <a href="admindelete.php?id=${outputArray[0]}">Poista</a>
-                            </div>
-                            </div>
-                            <div class="mrg-5"></div>
-                            `;
-                            internalOutputDiv.innerHTML += html;
-                        
-                        }
-                    }
-                }
+                const list = document.getElementById("list");
             </script>
             <div class="mrg-5"></div>
             <div class="divider"></div>
             <div class="grid-rows-2 mrg-10">
-            <div></div>
+                <div>
+                </div>
                 <a href="admincreateacc.php" class="btn-main">Luo Uusi</a>
             </div>
         </div>

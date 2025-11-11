@@ -2,8 +2,8 @@
     //This api file is specifically made for admins and other superusers. 
     //This api should not be in hands with regular users
 
-    require("../../../backend/services/sessions/start.php");
-    require("../../../backend/services/admincheck/check.php");
+    require("../../backend/services/sessions/start.php");
+    require("../../backend/services/admincheck/check.php");
 
     //header to return as json type
     header("Content-Type: application/json");
@@ -37,7 +37,6 @@
                     http_response_code(404);
                     echo json_encode(["message" => "EMPTY"]);
                 }
-                break;
             default:
                 //#TOSQLCOMMAND
                 $stmt = $pdo->prepare("SELECT userId, email, phoneNum, usertype FROM users WHERE userId = ?");
