@@ -3,10 +3,12 @@ require("../../backend/services/sessions/start.php");
 require("../../backend/services/admincheck/check.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 require_once("../../backend/services/db/db.php");
+
+//this page is for checking all of the reservations. THIS IS ADMIN ONLY PAGE
 ?>
 
     <link rel="stylesheet" href="../assets/css/searchPage.css">
-    <title>Reservations</title>
+    <title>Kaikki varaukset</title>
 </head>
 <body>
     <?php

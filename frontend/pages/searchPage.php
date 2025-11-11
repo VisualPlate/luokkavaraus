@@ -6,7 +6,7 @@ require_once("../../backend/services/db/db.php");
 ?>
 
     <link rel="stylesheet" href="../assets/css/searchPage.css">
-    <title>Document</title>
+    <title>Haku</title>
 </head>
 <body>
     <?php

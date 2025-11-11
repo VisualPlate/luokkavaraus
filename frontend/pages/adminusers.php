@@ -5,7 +5,7 @@ require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
-    <title>Luo Tili</title>
+    <title>Kaikki Käyttäjät</title>
 </head>
 <body>
     <?php
