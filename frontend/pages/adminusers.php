@@ -29,7 +29,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             </div>
             <script>
                 const apiUrl = "../../backend/api/admin/api.php";
-                //not ready
+                //not ready. needs function to fetch data from api
                 async function fetchContent() {
                     const res = fetch(apiUrl) {
                         .
