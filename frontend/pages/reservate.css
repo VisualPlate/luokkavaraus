@@ -150,7 +150,7 @@
            padding: 12px;
            margin-bottom: 12px;
            border-radius: 8px;
-           border-left: 4px solid #4CAF50;
+           border-left: 4px solid var(--bg-btn-main);
        }
 
        .reservation-item.booked {
@@ -368,13 +368,13 @@
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: var(--bg-btn-main);
 }
 
 .submit-btn {
     width: 100%;
     padding: 12px 20px;
-    background: #4CAF50;
+    background: var(--bg-btn-main);
     color: white;
     border: none;
     border-radius: 8px;

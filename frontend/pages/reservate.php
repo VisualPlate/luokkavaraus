@@ -171,7 +171,6 @@ foreach ($varaukset as $varaus) {
                     html += `
                         <div class="reservation-item">
                             <span class="reservation-time">⏰ ${aika} (${varaus.duration})</span>
-                            <span class="reservation-user">👤 ${varaus.userId || 'Käyttäjä ' + varaus.userId}</span>
                         </div>
                     `;
                 });
