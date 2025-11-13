@@ -24,7 +24,9 @@ switch ($rm) {
             getUser(intval($_GET['user']));
         } elseif (isset($_GET['userData']) && is_numeric($_GET['userData'])) {
             getUserData(intval($_GET['userData']));
-        } else {
+        } elseif (isset($_GET['class']) && is_numeric($_GET['class'])) {
+            getClass(intval($_GET['class']));
+        }  else {
             http_response_code(400);
             echo json_encode(["message" => "Virheellinen pyyntö"]);
         }
@@ -94,6 +96,26 @@ function getUserData($userData) {
             WHERE u.userId = ?
         ");
         $stmt->execute([$userData]);
+    }
+
+    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    if ($data) {
+        echo json_encode($data);
+    } else {
+        http_response_code(404);
+        echo json_encode(["message" => "EMPTY"]);
+    }
+}
+
+function getClass($class) {
+    global $pdo;
+
+    if ($class === 0) {
+        $stmt = $pdo->prepare("SELECT * FROM class");
+        $stmt->execute();
+    } else {
+        $stmt = $pdo->prepare("SELECT * FROM class WHERE classId=?");
+        $stmt->execute([$class]);
     }
 
     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
