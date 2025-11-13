@@ -28,7 +28,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             if ($user && password_verify($password, $user["passHash"])) {
                 // Password is correct — start session
                 $_SESSION["logged_in"] = true;
-                $_SESSION["user_id"] = $user["id"];
+                $_SESSION["user_id"] = $user["userId"];
                 $_SESSION["email"] = $user["email"];
                 $_SESSION["usertype"] = $user["usertype"];
 
