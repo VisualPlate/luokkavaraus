@@ -43,7 +43,7 @@ require_once("../includes/navbar/navbarUserPages.php");
             </div>
             <form action="">
 
-                <div class="col" id="userdata">
+                <div class="col">
                     
                     <label for="email">Sähköposti: </label>
                     <input type="email" name="email" id="email" value="<?= $result["email"] ?>">
@@ -53,6 +53,7 @@ require_once("../includes/navbar/navbarUserPages.php");
                     
     
                     <label for="type">Tyyppi: </label>
+                    <div class="mrg-5"></div>
                     <select name="type" id="type">
                         <option value="student" <?php if($result["usertype"]=="student")echo 'selected="true"'; ?> >Opiskelija</option>
                         <option value="teacher" <?php if($result["usertype"]=="teacher")echo 'selected="true"'; ?> >Opettaja</option>
