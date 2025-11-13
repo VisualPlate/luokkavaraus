@@ -13,6 +13,9 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
    <link rel="stylesheet" href="reservate.css">
 </head>
 <body>
+    <?php
+    require_once("../includes/navbar/navbar.php")
+    ?>
     <div class="container">
         <header>
             <h1>🏫 Luokkavarauskalenteri</h1>
@@ -39,8 +42,8 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                 
               
             
-                // Lisätään edellisen kuukauden päivät
-                $edellinen_kk_paivat = [27, 28, 29, 30, 31]; // Lokakuu
+                // edellisen kuukauden päivät
+                $edellinen_kk_paivat = [27, 28, 29, 30, 31]; 
                 foreach ($edellinen_kk_paivat as $paiva) {
                     echo '<div class="day other-month">';
                     echo '    <div class="date-number">' . $paiva . '</div>';
@@ -49,7 +52,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
 
                 // Marraskuun päivät (1-30)
                 for ($paiva = 1; $paiva <= 30; $paiva++) {
-                    $on_tanaan = ($paiva == 12) ? 'today' : '';
+                    $on_tanaan = ($paiva == 13) ? 'today' : '';
                     
                     echo '<div class="day ' . $on_tanaan . '">';
                     echo '    <div class="date-number">' . $paiva . '</div>';
