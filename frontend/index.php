@@ -1,4 +1,4 @@
-<!--THIS SHOULD BE THE LANDING PAGE-->
+    <!--THIS SHOULD BE THE LANDING PAGE-->
     <?php
     require_once("includes/htmlHead/htmlHead.php");
     ?>
@@ -10,7 +10,7 @@
     require_once("includes/navbar/navbar.php")
     ?>
     <div class="hero-bg">
-<div class="class-img">
+    <div class="class-img">
 <img src="../assets/images/classimg.jpg" alt="">
 
 

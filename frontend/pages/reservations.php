@@ -1,14 +1,21 @@
 <?php
+<<<<<<< HEAD
+=======
 //this file is meant to dump all currently logged in data from reservations, so the user can see them
 ?>
 <?php
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
 require("../../backend/services/sessions/start.php");
 require("../../backend/services/logincheck/check.php");
 require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 ?>
     <link rel="stylesheet" href="../assets/css/admin.css">
+<<<<<<< HEAD
+    <title>Varatut</title>
+=======
     <title>Varaukset</title>
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
 </head>
 <body>
     <?php
@@ -17,15 +24,23 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     <div class="a-center">
         <div class="max-600 grid-rows-1 grid-cent container">
             <div class="grid-rows-1 mrg-10">
+<<<<<<< HEAD
+                <h1>Käyttäjät</h1>
+=======
                 <h1>Varaukset</h1><?php var_dump($_SESSION)?>
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
             </div>
             <div class="col scroll" id="list">
                 
             </div>
             <script>
 
+<<<<<<< HEAD
+                const apiUrl = "../../backend/api/common/api.php?user=<?=$_SESSION('user_id')?> ";
+=======
                 const apiUrl = "../../backend/api/common/api.php?userData=<?=$_SESSION["user_id"]?>";
                 
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
                 
                 fetchContent();
 
@@ -44,6 +59,14 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                             row[ri].userId,
                             row[ri].reservationId,
                             row[ri].reservationDate,
+<<<<<<< HEAD
+                            
+                            row[ri].phoneNum,
+                            row[ri].usertype
+                        ]
+            
+                       
+=======
                             row[ri].reservationUseDate,
                             row[ri].duration,
                             row[ri].classId,
@@ -52,6 +75,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                         ]
                         //hides removed accounts
                         if (outputArray[3] !== "removed") {
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
                             const internalOutputDiv = document.createElement("div")
 
                             const outputDiv = document.getElementById("list");
@@ -75,13 +99,21 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                         
                         }
                     }
+<<<<<<< HEAD
+                
+=======
                 }
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
             </script>
             <div class="mrg-5"></div>
             <div class="divider"></div>
             <div class="grid-rows-2 mrg-10">
+<<<<<<< HEAD
+                
+=======
             <div></div>
                 <a href="admincreateacc.php" class="btn-main">Luo Uusi</a>
+>>>>>>> bab07dd70a8d847fc2fb99e821e54a4a56283061
             </div>
         </div>
     </div>
