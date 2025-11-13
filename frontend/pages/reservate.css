@@ -206,7 +206,7 @@
         }
 
         .day.today {
-            background: rgb(70, 70, 70);
+            background: rgb(36, 238, 208);
             color: white;
             border-color: rgb(36, 238, 208);
         }
@@ -218,7 +218,7 @@
         .date-number {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #333;
+            color: #333333;
             margin-bottom: 0.5rem;
         }
 
@@ -281,4 +281,135 @@
         .legend-color.booked {
             background: #f44336;
         }
-    
+    /* Lisää nämä olemassa olevaan reservate.css tiedostoon */
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Popup sisältö */
+.reservations-list {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.reservations-list h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.reservation-item {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #4CAF50;
+}
+
+.reservation-time {
+    font-weight: 600;
+    color: #333;
+}
+
+.reservation-user {
+    color: #666;
+}
+
+.no-reservations {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Varauslomake */
+.new-reservation-form {
+    margin-top: 20px;
+}
+
+.new-reservation-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Popup animaatiot */
+.popup-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-panel {
+    transform: translateY(-20px);
+    transition: transform 0.3s;
+}
+
+.popup-overlay.active .popup-panel {
+    transform: translateY(0);
+}

@@ -1,12 +1,53 @@
 <?php
 require("../../backend/services/sessions/start.php");
-
 require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
 
-//Päivien mukaan
-$varaukset_per_paiva = [];
+// Tarkista että classId on annettu
+if (!isset($_GET['classId']) || !is_numeric($_GET['classId'])) {
+    header("Location: searchPage.php");
+    exit();
+}
 
+$classId = intval($_GET['classId']);
+
+// Hae luokan tiedot
+$stmt = $pdo->prepare("SELECT classId, classCode, floor FROM class WHERE classId = ?");
+$stmt->execute([$classId]);
+$class = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$class) {
+    header("Location: searchPage.php");
+    exit();
+}
+
+// Hae kaikki varaukset tälle luokalle marraskuussa 2025
+$stmt = $pdo->prepare("
+    SELECT 
+        r.reservationId,
+        r.reservationUseDate,
+        r.duration,
+        u.userId
+    FROM reservation r
+    LEFT JOIN joinuser ju ON r.reservationId = ju.reservationId
+    LEFT JOIN users u ON ju.userId = u.userId
+    WHERE r.classId = ? 
+    AND MONTH(r.reservationUseDate) = 11 
+    AND YEAR(r.reservationUseDate) = 2025
+    ORDER BY r.reservationUseDate, r.duration
+");
+$stmt->execute([$classId]);
+$varaukset = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// Järjestä varaukset päivien mukaan
+$varaukset_per_paiva = [];
+foreach ($varaukset as $varaus) {
+    $paiva = intval(date('d', strtotime($varaus['reservationUseDate'])));
+    if (!isset($varaukset_per_paiva[$paiva])) {
+        $varaukset_per_paiva[$paiva] = [];
+    }
+    $varaukset_per_paiva[$paiva][] = $varaus;
+}
 
 ?>
 <!DOCTYPE html>
@@ -14,17 +55,17 @@ $varaukset_per_paiva = [];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luokkavarauskalenteri</title>
-   <link rel="stylesheet" href="reservate.css">
-   
+    <title>Varaa luokka <?php echo htmlspecialchars($class['classCode']); ?></title>
+    <link rel="stylesheet" href="reservate.css">
 </head>
 <body>
-    <?php
-    require_once("../includes/navbar/navbar.php")
-    ?>
+    <?php require_once("../includes/navbar/navbar.php"); ?>
+    
     <div class="container">
         <header>
-            <h1>🏫 Luokkavarauskalenteri</h1>
+            <h1>🏫 Luokka <?php echo htmlspecialchars($class['classCode']); ?> - Varauskalenteri</h1>
+            <p><?php echo htmlspecialchars($class['floor']); ?>. kerros</p>
+            <a href="searchPage.php" class="back-link">← Takaisin hakuun</a>
         </header>
 
         <div class="calendar-header">
@@ -44,11 +85,7 @@ $varaukset_per_paiva = [];
 
             <div class="days">
                 <?php
-                // Backend
-                
-              
-            
-                // edellisen kuukauden päivät
+                // Edellisen kuukauden päivät
                 $edellinen_kk_paivat = [27, 28, 29, 30, 31]; 
                 foreach ($edellinen_kk_paivat as $paiva) {
                     echo '<div class="day other-month">';
@@ -56,32 +93,27 @@ $varaukset_per_paiva = [];
                     echo '</div>';
                 }
 
-                // päivät (1-30)
+                // Marraskuun päivät (1-30)
                 for ($paiva = 1; $paiva <= 30; $paiva++) {
                     $on_tanaan = ($paiva == 13) ? 'today' : '';
+                    $varaus_count = isset($varaukset_per_paiva[$paiva]) ? count($varaukset_per_paiva[$paiva]) : 0;
                     
                     echo '<div class="day ' . $on_tanaan . '" onclick="openPopup(' . $paiva . ')">';
                     echo '    <div class="date-number">' . $paiva . '</div>';
                     
-                    if (isset($varaukset_per_paiva[$paiva])) {
-                        $vapaa = $varaukset_per_paiva[$paiva]['vapaa'];
-                        $varattu = $varaukset_per_paiva[$paiva]['varattu'];
-                        
+                    if ($varaus_count > 0) {
                         echo '    <div class="booking-indicator">';
-                        for ($i = 0; $i < $vapaa; $i++) {
-                            echo '<span class="booking-dot available"></span>';
-                        }
-                        for ($i = 0; $i < $varattu; $i++) {
+                        for ($i = 0; $i < min($varaus_count, 5); $i++) {
                             echo '<span class="booking-dot booked"></span>';
                         }
                         echo '    </div>';
-                        echo '    <div class="booking-count">' . ($vapaa + $varattu) . ' varausta</div>';
+                        echo '    <div class="booking-count">' . $varaus_count . ' varausta</div>';
                     }
                     
                     echo '</div>';
                 }
 
-                // Lisätään seuraavan kuukauden päivät täyttämään viimeinen viikko
+                // Seuraavan kuukauden päivät
                 for ($paiva = 1; $paiva <= 7; $paiva++) {
                     echo '<div class="day other-month">';
                     echo '    <div class="date-number">' . $paiva . '</div>';
@@ -94,7 +126,7 @@ $varaukset_per_paiva = [];
         <div class="legend">
             <div class="legend-item">
                 <div class="legend-color available"></div>
-                <span>Vapaa varaus</span>
+                <span>Ei varauksia</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color booked"></div>
@@ -117,20 +149,100 @@ $varaukset_per_paiva = [];
     </div>
 
     <script>
+        const classId = <?php echo $classId; ?>;
+        const varauksetData = <?php echo json_encode($varaukset_per_paiva); ?>;
+
         function openPopup(paiva) {
             const overlay = document.getElementById('popupOverlay');
             const title = document.getElementById('popupTitle');
             const content = document.getElementById('popupContent');
             
-            // Aseta otsikko
             title.textContent = `Varaukset - ${paiva}.11.2025`;
             
-            // TODO: Hae varaukset backendista AJAX:lla
-            // Tässä esimerkki staattisella datalla
+            // Hae päivän varaukset
+            const paivanVaraukset = varauksetData[paiva] || [];
             
+            let html = '<div class="reservations-list">';
             
+            if (paivanVaraukset.length > 0) {
+                html += '<h3>Olemassa olevat varaukset:</h3>';
+                paivanVaraukset.forEach(varaus => {
+                    const aika = varaus.reservationUseDate.split(' ')[1] || varaus.duration;
+                    html += `
+                        <div class="reservation-item">
+                            <span class="reservation-time">⏰ ${aika} (${varaus.duration})</span>
+                            <span class="reservation-user">👤 ${varaus.userId || 'Käyttäjä ' + varaus.userId}</span>
+                        </div>
+                    `;
+                });
+            } else {
+                html += '<p class="no-reservations">Ei varauksia tälle päivälle</p>';
+            }
+            
+            html += '</div>';
+            
+            // Varauslomake
+            html += `
+                <div class="new-reservation-form">
+                    <h3>Tee uusi varaus:</h3>
+                    <form id="reservationForm" onsubmit="submitReservation(event, ${paiva})">
+                        <div class="form-group">
+                            <label for="reservationTime">Kellonaika:</label>
+                            <input type="time" id="reservationTime" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Kesto:</label>
+                            <select id="duration" name="duration" required>
+                                <option value="1h">1 tunti</option>
+                                <option value="2h">2 tuntia</option>
+                                <option value="3h">3 tuntia</option>
+                                <option value="4h">4 tuntia</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Varaa</button>
+                    </form>
+                </div>
+            `;
+            
+            content.innerHTML = html;
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
+        }
+
+        function submitReservation(event, paiva) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const time = form.time.value;
+            const duration = form.duration.value;
+            const date = `2025-11-${paiva.toString().padStart(2, '0')} ${time}:00`;
+            
+            // Lähetä varaus backendiin
+            fetch('http://localhost/luokkavaraus/backend/api/common/api.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                   credentials: 'include',
+                body: JSON.stringify({
+                    classId: classId,
+                    reservationUseDate: date,
+                    duration: duration
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Varaus onnistui!');
+                    location.reload();
+                } else {
+                    alert('Virhe: ' + (data.message || 'Varaus epäonnistui'));
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Virhe varauksen tekemisessä');
+            });
         }
 
         function closePopup(event) {
@@ -143,7 +255,6 @@ $varaukset_per_paiva = [];
             document.body.style.overflow = 'auto';
         }
 
-        // Sulje popup ESC-näppäimellä
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 closePopup();

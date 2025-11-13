@@ -2,8 +2,8 @@
     //This api file is specifically made for admins and other superusers. 
     //This api should not be in hands with regular users
 
-    require("../../../backend/services/sessions/start.php");
-    require("../../../backend/services/admincheck/check.php");
+    require("../../services/sessions/start.php");
+    require("../../services/logincheck.php");
 
     //header to return as json type
     header("Content-Type: application/json");
