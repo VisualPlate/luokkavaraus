@@ -28,6 +28,10 @@ input, select {
     justify-self: right;
     justify-content: center;
 }
+
+.btn-main:hover{
+    cursor: pointer;
+}
 .btn-back {
     background-color: #d85a5a;
     border: none;
