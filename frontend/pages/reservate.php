@@ -3,6 +3,11 @@ require("../../backend/services/sessions/start.php");
 
 require("../../backend/services/db/db.php");
 require_once("../includes/htmlHead/htmlHeadPages.php");
+
+//Päivien mukaan
+$varaukset_per_paiva = [];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="fi">
@@ -11,6 +16,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luokkavarauskalenteri</title>
    <link rel="stylesheet" href="reservate.css">
+   
 </head>
 <body>
     <?php
@@ -50,11 +56,11 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                     echo '</div>';
                 }
 
-                // Marraskuun päivät (1-30)
+                // päivät (1-30)
                 for ($paiva = 1; $paiva <= 30; $paiva++) {
                     $on_tanaan = ($paiva == 13) ? 'today' : '';
                     
-                    echo '<div class="day ' . $on_tanaan . '">';
+                    echo '<div class="day ' . $on_tanaan . '" onclick="openPopup(' . $paiva . ')">';
                     echo '    <div class="date-number">' . $paiva . '</div>';
                     
                     if (isset($varaukset_per_paiva[$paiva])) {
@@ -96,5 +102,53 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             </div>
         </div>
     </div>
+
+    <!-- Popup-paneeli -->
+    <div id="popupOverlay" class="popup-overlay" onclick="closePopup(event)">
+        <div class="popup-panel" onclick="event.stopPropagation()">
+            <div class="popup-header">
+                <h2 id="popupTitle">Varaukset - </h2>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-content" id="popupContent">
+                <!-- Varaukset ladataan tähän dynaamisesti -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(paiva) {
+            const overlay = document.getElementById('popupOverlay');
+            const title = document.getElementById('popupTitle');
+            const content = document.getElementById('popupContent');
+            
+            // Aseta otsikko
+            title.textContent = `Varaukset - ${paiva}.11.2025`;
+            
+            // TODO: Hae varaukset backendista AJAX:lla
+            // Tässä esimerkki staattisella datalla
+            
+            
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePopup(event) {
+            if (event && event.target !== document.getElementById('popupOverlay')) {
+                return;
+            }
+            
+            const overlay = document.getElementById('popupOverlay');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Sulje popup ESC-näppäimellä
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closePopup();
+            }
+        });
+    </script>
 </body>
 </html>

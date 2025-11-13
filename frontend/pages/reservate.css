@@ -76,6 +76,113 @@
             gap: 1rem;
         }
 
+       
+       .popup-overlay {
+           display: none;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.5);
+           z-index: 1000;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .popup-overlay.active {
+           display: flex;
+       }
+
+       .popup-panel {
+           background: white;
+           border-radius: 12px;
+           padding: 24px;
+           max-width: 500px;
+           width: 90%;
+           max-height: 80vh;
+           overflow-y: auto;
+           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+           position: relative;
+       }
+
+       .popup-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-bottom: 20px;
+           padding-bottom: 12px;
+           border-bottom: 2px solid #e0e0e0;
+       }
+
+       .popup-header h2 {
+           margin: 0;
+           color: #333;
+           font-size: 1.5rem;
+       }
+
+       .close-btn {
+           background: none;
+           border: none;
+           font-size: 28px;
+           cursor: pointer;
+           color: #666;
+           padding: 0;
+           width: 32px;
+           height: 32px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 4px;
+           transition: background-color 0.2s;
+       }
+
+       .close-btn:hover {
+           background-color: #f0f0f0;
+           color: #333;
+       }
+
+       .popup-content {
+           margin-top: 16px;
+       }
+
+       .reservation-item {
+           padding: 12px;
+           margin-bottom: 12px;
+           border-radius: 8px;
+           border-left: 4px solid #4CAF50;
+       }
+
+       .reservation-item.booked {
+           border-left-color: #f44336;
+           background-color: #ffebee;
+       }
+
+       .reservation-item.available {
+           border-left-color: #4CAF50;
+           background-color: #e8f5e9;
+       }
+
+       .reservation-time {
+           font-weight: bold;
+           color: #333;
+           margin-bottom: 4px;
+       }
+
+       .reservation-details {
+           color: #666;
+           font-size: 0.9rem;
+       }
+
+       .day {
+           cursor: pointer;
+           transition: transform 0.2s;
+       }
+
+       .day:hover {
+           transform: scale(1.05);
+       }
+   
         .day {
             aspect-ratio: 1;
             border: 2px solid #e0e0e0;
