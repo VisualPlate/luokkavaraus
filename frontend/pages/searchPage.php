@@ -27,9 +27,8 @@ require_once("../../backend/services/db/db.php");
                 <?php
                 //get classroom data from database
                 $stmt = $pdo->prepare("
-                SELECT class.classId, class.classCode, class.floor, reservation.reservationUseDate, reservation.duration 
-                FROM class JOIN reservation 
-                ON class.classId = reservation.classId");
+                SELECT class.classId, class.classCode, class.floor 
+                FROM class");
                 $stmt->execute();
 
                 //display a card thingamajig for each classroom
