@@ -6,13 +6,18 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
 
 if(isset($_GET["id"])){
 
+
     if(!isset($_GET["save"])){
-    
+        
+        //get user data
+
         $stmt = $pdo->prepare("SELECT userId, email, phoneNum, usertype FROM users WHERE userId = ?");
         $stmt->execute([$_GET["id"]]);
     
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
     }else{
+
+        //update data to database
 
         $stmt = $pdo->prepare("UPDATE users SET email =?, phoneNum=?, usertype=? WHERE userId = ?");
         
@@ -40,23 +45,22 @@ require_once("../includes/navbar/navbarUserPages.php");
 
                 <div class="col" id="userdata">
                     
-                <label for="email">Sähköposti: </label>
-                <input type="email" name="email" id="email" value="<?= $result["email"] ?>">
-
-                <label for="phone">Puhelinnumero: </label>
-                <input type="text" name="phone" id="phone" value="<?= $result["phoneNum"] ?>">
-                
-
-                
-                <label for="type">Tyyppi: </label>
-                <select name="type" id="type">
-                    <option value="student" <?php if($result["usertype"]=="student")echo 'selected="true"'; ?> >Opiskelija</option>
-                    <option value="teacher" <?php if($result["usertype"]=="teacher")echo 'selected="true"'; ?> >Opettaja</option>
-                    <option value="admin"   <?php if($result["usertype"]=="admin")echo 'selected="true"'; ?> >Admin</option>
-                </select>
-                
-                <input type="hidden" name="id" value="<?= $_GET["id"] ?>">
-                <input type="hidden" name="save" value="true">
+                    <label for="email">Sähköposti: </label>
+                    <input type="email" name="email" id="email" value="<?= $result["email"] ?>">
+    
+                    <label for="phone">Puhelinnumero: </label>
+                    <input type="text" name="phone" id="phone" value="<?= $result["phoneNum"] ?>">
+                    
+    
+                    <label for="type">Tyyppi: </label>
+                    <select name="type" id="type">
+                        <option value="student" <?php if($result["usertype"]=="student")echo 'selected="true"'; ?> >Opiskelija</option>
+                        <option value="teacher" <?php if($result["usertype"]=="teacher")echo 'selected="true"'; ?> >Opettaja</option>
+                        <option value="admin"   <?php if($result["usertype"]=="admin")echo 'selected="true"'; ?> >Admin</option>
+                    </select>
+                    
+                    <input type="hidden" name="id" value="<?= $_GET["id"] ?>">
+                    <input type="hidden" name="save" value="true">
 
                 </div>
                 
