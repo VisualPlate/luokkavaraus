@@ -1,0 +1,11 @@
+index.php käyttää kieliä php ja html.
+
+Index on pääsivusto, mistä voi navin avulla suunnistaa haluttuun sivustoon.
+
+nav on yhdistetty sivustoon osoitteella: require_once("includes/navbar/navbar.php")
+
+Sivulla oleva taustakuva on netistä, mitä on muokattu meille sopivaksi.
+Likki kuvaan: https://media.istockphoto.com/id/1366797961/fi/valokuva/sis%C3%A4n%C3%A4kym%C3%A4t-tyhj%C3%A4%C3%A4n-japanilaistyyliseen-luokkahuoneeseen.jpg?s=2048x2048&w=is&k=20&c=8gzqP7gep6htRxKzRcICM9ej1ev-gbRiCYmDsdFo-CQ=
+
+index.php käyttää erillistä css-tiedostoa index.css, siellä on aseteltu kuva, tekstit, värit jne.
+

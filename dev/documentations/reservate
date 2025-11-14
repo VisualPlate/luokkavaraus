@@ -1,0 +1,16 @@
+Reservate.php käyttää JavaScriptiä, html ja php.
+
+Sivustolle pääsee, kun valitaan varattava luokka searchpages.php osiosta.
+
+Valitsemalla varattavan päivämäärän kalenterista, ilmestyy ruudulle popup kuvake, 
+mistä voit valita keston ja kellonajan.
+
+Backend - löytyy common/api.php ja reservate.php
+
+Kalenterille löytyy oma tyylitiedosto - reservate.css, mistä löytää värit, asettelut, hoverit jne.
+
+Tekijä: Justus
+
+
+
+
