@@ -89,6 +89,9 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
                                 <p>Kerros:</p>
                                 <p>${outputArray[7]}</p>
                             </div>
+                            <div class="row container-secondary space-between w-100">
+                                <a href="deletereservation.php?userid=${outputArray[0]}&reservationid=${outputArray[1]}">Poista varaus</a>
+                            </div>
                         </div>
                         </div>
                         <div class="mrg-5"></div>
