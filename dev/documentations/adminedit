@@ -1,0 +1,8 @@
+Käyttäjän muokkaussivu
+
+-Sivulla voi muokata valitun käyttäjän tietoja. Sinne pääsee adminusers.php -sivun kautta.
+
+-Sivu näyttää kättäjän sähköpostiosoitteen, puhelinnumeron sekä käyttäjätyypin (opiskelija, opettaja, admin), joita voi muokata.
+
+-Muutokset voi tallentaa Tallenna muutokset-painikkeella tai kumota Kumoa-painikkeella, minkä jälkeen käyttäjä ohjataan takaisin adminusers.php -sivulle.
+
