@@ -72,7 +72,7 @@ require_once("../includes/htmlHead/htmlHeadPages.php");
             <div class="mrg-5"></div>
             <div class="divider"></div>
             <div class="grid-rows-2 mrg-10">
-            <div></div>
+                <a href="admin.php" class="btn-main">Takaisin</a>
                 <a href="admincreateacc.php" class="btn-main">Luo Uusi</a>
             </div>
         </div>

@@ -18,9 +18,23 @@
     <div class="mrg-10"></div>
     <div class="user-navbar-open space-between col" id="userDropdown">
         <div class="row space-between mrg-in-10">
+            <a href="searchPage.php" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Hae</a>
+            <img src="../assets/icons/user-placeholder.svg" style="height:24px;isplay:flex;align-self:center">
+        </div>
+        <div class="mrg-5"></div>
+        <div class="row space-between mrg-in-10">
             <a href="reservations.php" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Omat varaukset</a>
             <img src="../assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center">
         </div>
+
+        <?php
+        if (isset($_SESSION["usertype"]) && $_SESSION["usertype"] === "admin"):?>
+        <div class="mrg-5"></div>
+        <div class="row space-between mrg-in-10">
+            <a href="admin.php" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Admin</a>
+            <img src="../assets/icons/user-placeholder.svg" style="height:24px;isplay:flex;align-self:center">
+        </div>
+        <?php endif ?>
         <div class="mrg-5"></div>
         <div class="row space-between mrg-in-10">
             <a href="logout.php" class="text-primary text-user-navbar-secondary" style="display:flex;align-self:center">Kirjaudu ulos</a>
@@ -42,7 +56,12 @@
             </div>
         </div>
         <div class="row mob-hidden">
+            <a href="searchPage.php"><img src="../assets/icons/user-placeholder.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
             <a href="reservations.php"><img src="../assets/icons/navbar-menu-list.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
+            <?php
+            if (isset($_SESSION["usertype"]) && $_SESSION["usertype"] === "admin"):?>
+            <a href="admin.php"><img src="../assets/icons/user-placeholder.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
+            <?php endif ?>
             <a href="logout.php"><img src="../assets/icons/navbar-door-open-red.svg" style="height:24px;isplay:flex;align-self:center;margin:5px"></a>
         </div>
     </div>
