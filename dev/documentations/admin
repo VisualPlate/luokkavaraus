@@ -1,0 +1,21 @@
+DOCUMENTAATIO ADMIN PANEELIIN JA SIVUIHIN
+
+Näihin sivuihin pääsee vain admin käyttäjät.
+
+Jos käyttäjä on admin
+=> Navbar sisältää Admin painikkeen, sekä pääsee hallintasivuille
+Jos ei ole admin
+=> käyttäjälle ei ole edes mahdollista päästä tai koskea sivun tietohin. navbarissa ei ole tietoa tälläisestä ominaisuudesta
+
+admin.php 
+=> Päähallinta sivu, josta pääsee muihin hallintasivuihin.
+
+admincheckreservations.php 
+=> Hallintapaneelin sivu, josta pystytään katsomaan kaikki varaukset kaikille käyttäjille. Tässä ei ole poisto ominaisuutta.
+
+adminusers.php
+=> Hallintasivu, jossa on muokkaus ja poista ominaisuudet jokaiselle käyttäjälle. Tällä sivulla on linkki käyttäjän luontiin
+
+admincreateacc.php
+=> Käyttäjän luonti hallintasivun kautta. Normaaleilla käyttäjillä EI ole oikeutta luoda tiliä sivustolle, joten se on tehtävä hallintapaneelin kautta
+
