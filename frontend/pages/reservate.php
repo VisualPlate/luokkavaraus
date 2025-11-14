@@ -122,12 +122,6 @@ foreach ($varaukset as $varaus) {
                 ?>
             </div>
         </div>
-
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color available"></div>
-                <span>Ei varauksia</span>
-            </div>
             <div class="legend-item">
                 <div class="legend-color booked"></div>
                 <span>Varattu</span>
@@ -174,9 +168,7 @@ foreach ($varaukset as $varaus) {
                         </div>
                     `;
                 });
-            } else {
-                html += '<p class="no-reservations">Ei varauksia tälle päivälle</p>';
-            }
+            } 
             
             html += '</div>';
             
