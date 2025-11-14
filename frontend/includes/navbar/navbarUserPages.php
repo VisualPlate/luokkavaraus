@@ -2,9 +2,7 @@
 <div class="pos-top pos-right mrg-15 tab-hidden">
     <div class="user-navbar row space-between">
         <div class="row">
-            <div>
-                <img src="../assets/icons/user-placeholder.svg" style="height:100%">
-            </div>
+
             <div class="col col-cent">
                 <div>
                     <p class="text-primary text-user-navbar-header"><?= $_SESSION["email"]; ?></p>

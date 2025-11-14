@@ -33,9 +33,7 @@
 <div class="mob-user-navbar tab-show">
     <div class="row space-between">
         <div class="row">
-            <div>
-                <img src="assets/icons/user-placeholder.svg" style="height:36px">
-            </div>
+
             <div class="col col-cent">
                 <div>
                     <p class="text-primary text-user-navbar-header"><?= $_SESSION["email"]; ?></p>
