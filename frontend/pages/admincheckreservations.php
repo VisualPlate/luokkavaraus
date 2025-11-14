@@ -8,6 +8,7 @@ require_once("../../backend/services/db/db.php");
 ?>
 
     <link rel="stylesheet" href="../assets/css/searchPage.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
     <title>Kaikki varaukset</title>
 </head>
 <body>
@@ -15,7 +16,7 @@ require_once("../../backend/services/db/db.php");
         require_once("../includes/navbar/navbarUserPages.php");
     ?>
     <div class="mrg-15 main-content">
-        <h1>Luokat</h1>
+        <h1>Käyttäjien varaukset</h1>
 
         <div class="row">
 
@@ -52,6 +53,7 @@ require_once("../../backend/services/db/db.php");
                 ?>
             </div>
         </div>
+        <a href="admin.php" class="btn-main">Takaisin</a>
     </div>
 </body>
 </html>
