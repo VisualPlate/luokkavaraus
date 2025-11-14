@@ -4,5 +4,5 @@ Käyttäjän muokkaussivu
 
 -Sivu näyttää kättäjän sähköpostiosoitteen, puhelinnumeron sekä käyttäjätyypin (opiskelija, opettaja, admin), joita voi muokata.
 
--Muutokset voi tallentaa Tallenna muutokset-painikkeella tai kumota Kumoa-painikkeella, minkä jälkeen käyttäjä ohjataan takaisin adminusers.php -sivulle.
+-Muutokset voi tallentaa Tallenna-painikkeella tai kumota Kumoa-painikkeella, minkä jälkeen käyttäjä ohjataan takaisin adminusers.php -sivulle.
 
