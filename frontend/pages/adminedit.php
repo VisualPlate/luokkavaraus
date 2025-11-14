@@ -1,4 +1,8 @@
 <?php
+//checks if user has get method id
+if (!isset($_GET["id"]) && !is_numeric($_GET["id"])) {
+    header("location: adminusers.php");
+}
 require("../../backend/services/sessions/start.php");
 require("../../backend/services/admincheck/check.php");
 require("../../backend/services/db/db.php");
