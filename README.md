@@ -6,6 +6,6 @@ Koulun projekti
   ⚡Projektissa käytetään - PHP, JS ja CSS  
   
 ## 📜 Tekijät  
-  ⚡@Justus45 - Frontend  
+  ⚡@Justus45 - Frontend, Backend
   ⚡@Aleksipurmonen - Frontend  
   ⚡@VisualPlate - Frontend, Backend  
